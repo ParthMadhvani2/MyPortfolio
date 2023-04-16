@@ -1,2 +1,2 @@
 # Portfolio
-Live demo : [Live Preview](https://parth-madhvani.vercel.app/)
+Live demo : [Parth Madhvani](https://parth-madhvani.vercel.app/)
