@@ -22,23 +22,31 @@
 .container{
     width:1200px;
     margin:0 auto;
+    
 }
 
 .navbar{
-    margin-top: 9px;
+  width: 1200px;
+    margin-top: -8.5rem;
     border-radius: 15px;
     display: flex;
     justify-content:space-between;
     align-items:center;
+    position: fixed;
     padding-top:1rem;
     padding-bottom: 2px;
-    background-color: rgba(114, 109, 153, 0.6);
+    background-color: rgba(114, 109, 153, 0.5);
+    z-index: 50;
 }
 
 .logo{
     margin-top: -13px;
     margin-left: 5px;
-    width:70px;
+    width:60px;
+}
+
+.logo:hover{
+  transform: scale(1.1);
 }
 
 .logo-container{
@@ -50,8 +58,9 @@
 .logo-text{
     margin-top: -13px;
     margin-left:-0.2rem;
-    font-size:28px;
+    font-size:25px;
     color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
 .nav-items{
@@ -62,7 +71,7 @@
 }
 
 .nav-items div{
-    font-size:20px;
+    font-size:18px;
     font-weight:500;
     cursor:pointer;
    
@@ -82,15 +91,23 @@ a{
     font-weight: bold;
 }
 
+.resume-nav{
+  color: white;
+  width:auto;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  position: relative;
+}
+
 .hero-section{
     position:relative;
     display:flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    margin: 4rem auto;
+    margin: 10rem auto;
     padding: 0 1rem;
-    padding-bottom: 8rem;
 }
 
 
@@ -104,7 +121,7 @@ a{
 }
 
 .hero-section-heading{
-    font-size: 40px;
+    font-size: 45px;
     color: #ffffff;
     font-weight: 500;
 }
@@ -115,7 +132,7 @@ a{
 }
 
 .hero-section-sub-heading{
-    font-size: 35px;
+    font-size: 40px;
     line-height: 45px;
 }
 
@@ -125,20 +142,20 @@ a{
     font-weight: 500;
     color: white;
     line-height: 23px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 .links{
   display:inline-flex;
   margin-top: 40px;
-  
-
 }
 
 .resume{
-  font-size: 18px;
+  font-size: 20px;
   color: white;
-  padding: 0.8rem 3rem;
+  padding-top: 0.8rem;
+  padding-left: 3rem;
   width:auto;
   cursor: pointer;
   transition: all 0.5s;
@@ -146,14 +163,20 @@ a{
   position: relative;
   z-index: 1;
 }
+.resume:hover{
+  transition:0.9s;
+  font-weight: bolder;
+  color: var(--bgOrange);
+}
 
 .arrow{
-  width:20px;
-  height:20px;
+  width:16px;
+  height:16px;
 }
 
 .arrow:hover{
   transform:translateX(5px);
+  color: var(--bgOrange);
 }
 
 .btn-pink {
@@ -173,7 +196,7 @@ a{
 .btn-pink::before {
   content: "";
   position: absolute;
-  background-color: #000000;
+  background-color: #00000070;
   top: 0px;
   left: 0;
   right: 0;
@@ -182,6 +205,7 @@ a{
   transform: scaleX(0);
   transform-origin: left;
   transition: all 0.8s;
+
 }
 .btn-pink:hover::before {
   transform: scaleX(1);
@@ -325,6 +349,46 @@ a{
     }
   }
 
+/* development-container */
+.dev-container{
+  position:relative;
+  display:flex;
+  padding:5rem;
+  margin:10rem auto;
+  gap:30px;
+}
+
+.dev-container-left{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.dev-heading{
+  font-size:50px;
+  font-style: bolder;
+  color:rgb(131, 113, 247);
+  line-height: 50px;
+  text-align: center;
+  text-shadow:white 2px 2px 1px;
+}
+
+.dev-subHeading{
+  margin-top: 1rem;
+  margin-left: 25%;
+  margin-right: 25%;
+
+  width:50%;
+  text-align: center;
+  color: white;
+}
+
+.dev-subHeading p{
+  margin:15px 0;
+}
+
+
+
   .project-section{
     background-color: rgb(231,231,231,0.8);
     margin-top:4rem;
@@ -332,10 +396,17 @@ a{
 
   .page-header{
     color:var(--bgOrange);
-    font-size:80px;
+    font-size:100px;
     text-align:center;
     padding-top:30px;
+    text-shadow: #1f1f1f 10px -7px 2px ;
   }
+
+  .project-img{
+    width: 100px;
+    height: 100px;
+  }
+
   .project-container{
     max-width: 1200px;
     margin:0 auto;
@@ -560,6 +631,11 @@ a{
     gap:30px;
   }
 
+  .skill-img{
+    width: 100px;
+    height: 100px;
+  }
+
 .skill-container-left{
   width:60%;
   display:flex;
@@ -643,7 +719,7 @@ a{
 
 .contactus-heading{
   display: flex;
-  margin-top: -66px;
+  margin-top: -67px;
   margin-left: 40px;
   font-size:4em;
   color:#1f1f1f;
@@ -668,6 +744,7 @@ a{
 }
 
 .contactus-form-container{
+  position:relative;
   margin-top:20px;
   display:flex;
   align-items: center;
@@ -681,6 +758,7 @@ a{
   width:50%;
   margin: 2rem 5rem;
 }
+
 
 
 .formfield-container{
@@ -716,14 +794,14 @@ a{
 
 .submit-icon{
   padding:0 1rem;
-  font-size:1.2rem;
+  font-size:1rem;
 }
 
 footer{
   position:relative;
   margin-top:-1px;
   background-color: #343d68;
-  padding:5rem;
+  padding:2rem;
 }
 
 .footer-wrapper{
@@ -740,7 +818,7 @@ footer{
   bottom:0;
   color:#535c87;
   user-select:none;
-  font-size:5em;
+  font-size:3em;
 }
 
 .link-wrapper{
