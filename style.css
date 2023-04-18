@@ -232,12 +232,14 @@ a{
     filter: grayscale(1);
     transition: all 1s;
     animation: scaleImage 5s linear infinite;
+    border-radius: 5%;
   }
     .user-image img{
     z-index: -9;
     position: absolute;
     width: 360px;
     height: 380px;
+     border-radius: 5%;
     }
   @keyframes scaleImage {
 
@@ -771,10 +773,11 @@ a{
   padding: 0 2rem;
   font-size:18px;
   border-radius: 5px;
-  box-shadow: 1px 1px 20px #939393;
+  box-shadow: 1px 1px 10px #939393;
   font-weight:500;
   border:none;
   margin-top:27px;
+  border: 1px solid rgba(0, 0, 0, 0.497);
 }
 
 .formfield-textarea{
