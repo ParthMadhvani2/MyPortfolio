@@ -797,6 +797,33 @@ a{
   font-size:1rem;
 }
 
+.contactus-img{
+  width: 400px;
+  height: 400px;
+}
+.hr{
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+}
+.contactus-below{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+  
+  
+}
+.contactus-below a{
+  cursor: pointer;
+  margin: auto;
+  color:rgb(86, 144, 253);
+  font-size: medium;
+}
+
 footer{
   position:relative;
   margin-top:-1px;
