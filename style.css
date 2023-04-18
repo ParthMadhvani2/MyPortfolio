@@ -88,7 +88,7 @@ a{
 
 .nav-items div:hover{
     transition:0.8s;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .resume-nav{
