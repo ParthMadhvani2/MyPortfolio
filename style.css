@@ -238,9 +238,9 @@ a{
     z-index: -9;
     position: absolute;
     width: 450px;
-    height: 480px;
+    height: 500px;
     border-radius: 5%;
-    top: -2%;
+    top: -3%;
     left: -3%;
     }
   @keyframes scaleImage {
