@@ -237,9 +237,11 @@ a{
     .user-image img{
     z-index: -9;
     position: absolute;
-    width: 360px;
-    height: 380px;
-     border-radius: 5%;
+    width: 450px;
+    height: 480px;
+    border-radius: 5%;
+    top: -2%;
+    left: -3%;
     }
   @keyframes scaleImage {
 
