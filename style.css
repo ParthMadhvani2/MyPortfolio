@@ -818,10 +818,15 @@ a{
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-bottom: 30px;
-  
-  
+  margin-bottom: 30px; 
 }
+
+.contactus-below p{
+  color:rgb(90, 90, 90);
+  width: 100%;
+  text-align: center;
+}
+
 .contactus-below a{
   cursor: pointer;
   margin: auto;
