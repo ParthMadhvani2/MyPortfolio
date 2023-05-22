@@ -85,6 +85,11 @@ a{
     text-decoration: none;
 }
 
+.nav-items div a:hover {
+  background-color: transparent;
+  text-decoration:underline;
+  text-underline-position: below;
+}
 
 .nav-items div:hover{
     transition:0.8s;
