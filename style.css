@@ -77,7 +77,7 @@
    
 }
 .nav-items div a{
-    color:white;
+    color:rgb(255, 255, 255);
     /* transition: all 5s ease; */
 }
 
@@ -245,7 +245,7 @@ a{
     width: 450px;
     height: 500px;
     border-radius: 5%;
-    top: -3%;
+    top: -2%;
     left: -3%;
     }
   @keyframes scaleImage {
@@ -574,7 +574,6 @@ a{
   #project3{
     background-image: url(./images/projects/Project3.png);
   }
-
   @media (max-width:1300px) {
     .page-header {
       padding-top: 30px;
@@ -631,7 +630,7 @@ a{
       scale: 0.55;
     }
   }
-
+  
   .skills-container{
     position:relative;
     display:flex;
@@ -882,4 +881,3 @@ footer{
   display:flex;
   gap:1rem;
 }
-
