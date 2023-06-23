@@ -581,8 +581,7 @@ a{
   #project5{
     background-image: url(./images/projects/Project5.png);
   }
-
-
+  
   @media (max-width:1300px) {
     .page-header {
       padding-top: 30px;
