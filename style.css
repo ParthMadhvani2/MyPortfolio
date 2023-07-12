@@ -75,7 +75,7 @@
 }
 
 .nav-items div{
-    font-size:18px;
+    font-size:16px;
     font-weight:500;
     cursor:pointer;
    
@@ -123,7 +123,6 @@ a{
 
 
 .hero-section-left{
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -131,7 +130,7 @@ a{
 }
 
 .hero-section-heading{
-    font-size: 45px;
+    font-size: 40px;
     color: #ffffff;
     font-weight: 500;
 }
@@ -142,7 +141,7 @@ a{
 }
 
 .hero-section-sub-heading{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 45px;
 }
 
@@ -151,14 +150,14 @@ a{
     width: 70%;
     font-weight: 500;
     color: white;
-    line-height: 23px;
+    line-height: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 .links{
   display:inline-flex;
-  margin-top: 40px;
+  margin-top: 3%;
 }
 
 .resume{
