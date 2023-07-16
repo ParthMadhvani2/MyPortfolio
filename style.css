@@ -706,10 +706,10 @@ a{
 .connect-left h2{
   color: black;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: xx-large;
+  font-size: 2rem;
 }
 .connect-left p{
-  font-size: medium;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.651);
 }
 
@@ -719,7 +719,7 @@ a{
   color: white;
   padding: 0.8rem 2.3rem;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.5s;
   font-weight: 500;
@@ -1559,6 +1559,29 @@ footer{
   gap:1rem;
 }
 
+.connect-left h2{
+  font-size:1.5rem;
+}
+.connect-left p{
+  font-size:0.625rem;
+}
+
+.btn-black {
+  font-size: 1rem;
+}
+
+footer{
+  padding:2rem;
+}
+
+.footer-wrapper{
+  display:grid;
+}
+
+.footer-faded-text{
+  font-size:2em;
+}
+
 }
 
 
@@ -1709,15 +1732,15 @@ footer{
     }
   
   .page-header {
-    padding-top: 30px;
+    padding-top: 2rem;
     color: var(--bgOrange);
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .project-container {
-    padding: 5px;
-    margin: 10px;
-    gap: 60px;
+    padding: 0.3rem;
+    margin: 0.625rem;
+    gap: 4rem;
   }
   .project-card {
     width: 100%;
@@ -1738,7 +1761,7 @@ footer{
     left: 0;
   }
   .project-heading {
-    font-size: 40px;
+    font-size: 2.5rem;
     width: 100%;
   }
   .project-sub-heading {
@@ -1754,7 +1777,7 @@ footer{
     width: 100%;
   }
   .project-skill {
-    width: 35px;
+    width: 2.5rem;
   }
   .project-card:hover .project-number {
     display: none;
@@ -1763,15 +1786,37 @@ footer{
     scale: 0.55;
   }
 
+.skills-container{
+  position:relative;
+  display:grid;
+  padding:3rem;
+  margin:3rem auto;
+  gap:30px;
+}
+
+.skill-img{
+  width: 100px;
+  height: 100px;
+}
+
 .skill-container-left{
-  width:25%;
+  width:28%;
   display:flex;
   flex-direction:column;
 }
 
+.skill-container-right{
+display:flex;
+flex-wrap:wrap;
+width:24%;
+position:relative;
+gap:1rem;
+justify-content: center;
+}
+
 .skill-fade-text{
   font-size:3em;
-  bottom:-15.9%;
+  bottom:-4%;
   right:70%;
 }
 
@@ -1888,30 +1933,6 @@ footer{
   font-size: medium;
 }
 
-footer{
-  position:relative;
-  margin-top:-1px;
-  background-color: #343d68;
-  padding:1rem;
-}
-
-.footer-wrapper{
-  display:flex;
-  gap:1rem;
-  padding:1.2rem;
-  justify-content: space-between;
-  align-items:center;
-}
-
-.footer-faded-text{
-  position:absolute;
-  left:0;
-  bottom:0;
-  color:#535c87;
-  user-select:none;
-  font-size:2em;
-}
-
 .link-wrapper{
   display:flex;
   gap:1rem;
@@ -1933,4 +1954,42 @@ footer{
   gap:1rem;
 }
 
+.connect-left h2{
+  font-size: 1.125rem;
+}
+.connect-left p{
+  font-size:0.55rem;
+}
+
+.btn-black {
+  font-size: 0.6rem;
+}
+
+footer{
+  padding:1.5rem;
+}
+
+.footer-wrapper{
+  display:grid;
+}
+
+.footer-faded-text{
+  font-size:1.5em;
+}
+
+}
+
+
+
+/* contactus button*/ 
+
+.alert{
+  width: 106%;
+  font-weight: 600;
+  display: none;
+  color: white;
+  background-color: rgb(128, 128, 128);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
 }

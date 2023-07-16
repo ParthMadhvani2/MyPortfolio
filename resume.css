@@ -20,29 +20,29 @@
 }
 
 .container{
-    width:1200px;
+    width:80vw;
     margin:0 auto;
     
 }
 
 .navbar{
-  width: 1200px;
+    width:80vw;
     margin-top: -8.5rem;
-    border-radius: 15px;
+    border-radius: 1rem;
     display: flex;
     justify-content:space-between;
     align-items:center;
     position: fixed;
     padding-top:1rem;
-    padding-bottom: 2px;
+    padding-bottom: 0.13rem;
     background-color: rgba(114, 109, 153, 0.5);
     z-index: 50;
 }
 
 .logo{
-    margin-top: -13px;
+    margin-top: -0.8125rem;
     margin-left: 5px;
-    width:60px;
+    width:3.75rem;
 }
 
 .logo:hover{
@@ -56,22 +56,22 @@
 }
 
 .logo-text{
-    margin-top: -13px;
+    margin-top: -0.813rem;
     margin-left:-0.2rem;
-    font-size:25px;
+    font-size:1.563rem;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
 .nav-items{
-  margin-top: -12px;
+  margin-top: -0.75rem;
     display:flex;
     gap:2rem;
     padding: 0 4em;
 }
 
 .nav-items div{
-    font-size:18px;
+    font-size:1.125rem;
     font-weight:500;
     cursor:pointer;
    
@@ -91,15 +91,6 @@ a{
     font-weight: bolder;
 }
 
-.resume-nav{
-  color: white;
-  width:auto;
-  cursor: pointer;
-  transition: all 0.5s;
-  font-weight: 500;
-  position: relative;
-}
-
 .hero-section{
     position:relative;
     display:flex;
@@ -113,20 +104,17 @@ a{
 
 .img-container{
     position: relative;
-    width: 600px;
+    width: 75vw;
     pointer-events: none;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 20px #ffffffbc;
+    box-shadow: 2px 2px 20px #ffffff8e;
 }
-
 
 .role{
     color: #5c54d0;
     font-weight: 800;
 }
-
-
 
 .links{
   display:inline-flex;
@@ -209,80 +197,6 @@ a{
   }
 
 
-.form{
-  display:flex;
-  flex-direction: column;
-  gap:30px;
-  width:35%;
-  margin: 2rem 5rem;
-}
-
-
-
-.formfield-container{
-  width:100%;
-}
-
-.formfield{
-  width:100%;
-  height:42px;
-  padding: 0 2rem;
-  font-size:18px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 10px #939393;
-  font-weight:500;
-  border:none;
-  margin-top:27px;
-  border: 1px solid rgba(0, 0, 0, 0.497);
-}
-
-.formfield-textarea{
-  height:auto;
-  padding-top:1rem;
-}
-
-#submit-btn{
-  border:none;
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-#submit-btn:hover{
-  scale:0.9;
-}
-
-.submit-icon{
-  padding:0 1rem;
-  font-size:1rem;
-}
-
-.contactus-img{
-  width: 400px;
-  height: 400px;
-}
-.hr{
-  width: 800px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
-
-}
-.contactus-below{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 30px;
-  
-  
-}
-.contactus-below a{
-  cursor: pointer;
-  margin: auto;
-  color:rgb(86, 144, 253);
-  font-size: medium;
-}
-
 footer{
   position:relative;
   margin-top:-1px;
@@ -325,4 +239,141 @@ footer{
 .icon-wrapper{
   display:flex;
   gap:1rem;
+}
+
+/* Responsiveness */
+
+
+/* Responsive for 1000px */
+
+
+@media (max-width:1000px) {
+
+  .navbar{
+      margin-top: -8.5rem;
+      border-radius: 15px;
+      padding-top:1rem;
+      padding-bottom: 2px;   
+  }
+  
+  .logo{
+      margin-top: -13px;
+      margin-left: 5px;
+      width:40px;
+  }
+  
+  .logo-text{
+      font-size:20px;
+    }
+  
+  .nav-items{
+      margin-top: -12px;
+      display:flex;
+      gap:1rem;
+      padding: 0 1em;
+  }
+  
+  .nav-items div{
+      font-size:20px;
+  }
+
+  .resume{
+    font-size: 20px;
+    padding-top: 0.8rem;
+  }
+  
+  .arrow{
+    width:20px;
+    height:20px;
+  }
+  
+
+  .btn-pink {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  footer{
+    padding:2rem;
+  }
+  
+  .footer-wrapper{
+    display:grid;
+  }
+  
+  .footer-faded-text{
+    font-size:2em;
+  }
+}
+
+
+
+/* Responsive for iphone 12 pro */
+
+
+@media (max-width:500px) {
+
+  .navbar{
+      margin-top: -8.5rem;
+      border-radius: 15px;
+      padding-top:1rem;
+      padding-bottom: 2px;   
+  }
+  
+  .logo{
+      margin-top: -13px;
+      margin-left: 5px;
+      width:30px;
+  }
+  
+  .logo-text{
+      font-size:10px;
+    }
+  
+  .nav-items{
+      margin-top: -12px;
+      display:flex;
+      gap:1rem;
+      padding: 0 1em;
+  }
+  
+  .nav-items div{
+      font-size:10px;
+  }
+  
+  .resume{
+    font-size: 15px;
+    padding-top: 0.8rem;
+  }
+  
+  .arrow{
+    width:10px;
+    height:10px;
+  }
+  
+
+  .btn-pink {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .icon-wrapper{
+    display:flex;
+    zoom: 60%;
+    gap:1rem;
+  }
+
+  footer{
+    padding:1.5rem;
+  }
+  
+  .footer-wrapper{
+    display:grid;
+  }
+  
+  .footer-faded-text{
+    font-size:1.5em;
+  }
 }

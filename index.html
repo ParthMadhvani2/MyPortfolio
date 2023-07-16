@@ -46,16 +46,16 @@
                   Hey! I am an engineer, learning how to build and design scalable websites and applications. My focus is to build with better user experience, design aesthetic, good developer experience and meaningful impact.
                 </div>
                 <div class="links">
-                <a href="https://www.linkedin.com/in/parthmadhvani/"><div class="btn-pink" id="btn">Here me</div></a>
+                <a href="https://www.linkedin.com/in/parthmadhvani2/"><div class="btn-pink" id="btn">Here me</div></a>
                 <a href="./resume.html" ><div class="resume">Resume <img class="arrow" src="./images/userAsset/arrow.png"></div></a>
                  
               
               </div>
               <div class="icon-wrapper">
-                <a href="https://www.linkedin.com/in/parthmadhvani/"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="https://www.linkedin.com/in/parthmadhvani2/"><i class="fa-brands fa-linkedin icon"></i></a>
                 <a href="https://github.com/ParthMadhvani2"><i class="fa-brands fa-github icon"></i></a>
-                <a href="https://twitter.com/MadhvaniParth"><i class="fa-brands fa-twitter icon"></i></a>
-                <a href="https://www.instagram.com/madhvani_parth/"><i class="fa-brands fa-instagram icon"></i></a>
+                <a href="https://twitter.com/parthmadhvani2"><i class="fa-brands fa-twitter icon"></i></a>
+                <a href="https://www.instagram.com/parthmadhvani2/"><i class="fa-brands fa-instagram icon"></i></a>
                 <a href="mailto:madhvaniparth2@gmail.com"><i class="fa-regular fa-envelope icon"></i></a>
               </div>
             </div>
@@ -369,36 +369,33 @@
 
             <div class="contactus-form-container">
               <img src="./images/userAsset/contact.svg" class="contactus-img">
-              <form class="form" action="">
+              <form class="form" action="" id="contactForm">
                 <div class="formfield-container">
+                  <div class="alert">Your message sent</div>
                   <input class="formfield" 
                   type="text" 
                   name="name" 
-                  id="" 
-                  placeholder="John Doe" />
+                  id="name" 
+                  placeholder="John Doe" required/>
 
                   <input class="formfield" 
                   type="email" 
                   name="email" 
-                  id="" 
-                  placeholder="Johndoe@gmail.com" />
+                  id="email" 
+                  placeholder="Johndoe@gmail.com" required/>
 
                   <textarea name="message" 
-                  id="" cols="30" rows="10" 
+                  id="message" cols="30" rows="10" 
                   class="formfield formfield-textarea"
-                  placeholder="Hey there! Let's connect"></textarea>
+                  placeholder="Hey there! Let's connect" required></textarea>
 
                 </div>
                 
-                <div>
+                <div >
                   <button  type="submit" class="btn-pink" id="submit-btn">
-                    Send email<i class="submit-icon fa-solid fa-paper-plane"></i>
+                    Submit<i class="submit-icon fa-solid fa-paper-plane"></i>
                   </button>
                 </div>
-
-                
-                
-
               </form>
               
             </div>
@@ -442,6 +439,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
     <script>
       var typeData = new Typed(".role", {
