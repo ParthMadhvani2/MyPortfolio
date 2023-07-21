@@ -1071,6 +1071,19 @@ ul li .descr::before {
   font-size: medium;
 }
 
+/* contactus button*/ 
+
+.alert{
+  width: 106%;
+  font-weight: 600;
+  display: none;
+  color: white;
+  background-color: rgb(128, 128, 128);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 /* Footer Section */
 
 footer{
@@ -1128,7 +1141,7 @@ footer{
 @media (max-width:1200px) {
 
   .navbar{
-    width: 100%;
+      width: 100%;
       margin-top: -8.5rem;
       border-radius: 15px;
       padding-top:1rem;
@@ -1595,7 +1608,7 @@ footer{
 @media (max-width:500px) {
 
   .navbar{
-    width: 100%;
+      width: 100%;
       margin-top: -8.5rem;
       border-radius: 15px;
       padding-top:1rem;
@@ -1609,7 +1622,7 @@ footer{
   }
   
   .logo-text{
-      font-size:10px;
+      font-size:11px;
     }
   
   .nav-items{
@@ -1620,14 +1633,14 @@ footer{
   }
   
   .nav-items div{
-      font-size:10px;
+      font-size:11px;
   }
 
   .hero-section{
     display:grid;
 }
 .hero-section-left{
-  /* width:100%; */
+  width:100%;
   margin-top: 1px;
 }
 
@@ -1669,7 +1682,7 @@ footer{
     font-size: 15px;
   }
   .hero-section-right{
-  left: 0.5%;
+  left: 0.7%;
  } 
   
   .user-image{
@@ -1871,7 +1884,7 @@ justify-content: center;
   width:100%;
   height:40px;
   padding: 0 2rem;
-  font-size:15px;
+  font-size:10px;
   border-radius: 5px;
   box-shadow: 1px 1px 10px #939393;
   font-weight:500;
@@ -1955,10 +1968,10 @@ justify-content: center;
 }
 
 .connect-left h2{
-  font-size: 1.125rem;
+  font-size: 1.1rem;
 }
 .connect-left p{
-  font-size:0.55rem;
+  font-size:0.7rem;
 }
 
 .btn-black {
@@ -1977,19 +1990,4 @@ footer{
   font-size:1.5em;
 }
 
-}
-
-
-
-/* contactus button*/ 
-
-.alert{
-  width: 106%;
-  font-weight: 600;
-  display: none;
-  color: white;
-  background-color: rgb(128, 128, 128);
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
 }
