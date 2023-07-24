@@ -30,7 +30,7 @@
 /* Navbar section */
 
 .navbar{
-  width: 1200px;
+    width: 1200px;
     margin-top: -8.5rem;
     border-radius: 15px;
     display: flex;
@@ -623,7 +623,7 @@ a{
   font-size:7em;
   font-style:bold;
   color:rgb(231,231,231);
-  bottom:-28.2%;
+  bottom:-25.5%;
   right:-1%;
   user-select:none;
   overflow-y:hidden;
@@ -684,7 +684,6 @@ a{
 /* connect-box */
 
 .lets-connect{
-  background-color: #D9AFD9;
   background-image: linear-gradient(270deg, #d7add7db 0%, #c5a66bea 50%, #97ace1ef 100%);
   background-repeat: no-repeat;
   object-fit: cover;
@@ -734,6 +733,10 @@ a{
   box-shadow: none;
 }
 
+.fa-rocket{
+  margin-right: 5px;
+}
+
 
 /* Featured Timeline */
 .design-section {
@@ -752,7 +755,7 @@ a{
 .timeline-h1{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 3%;
-  margin-left: 3%;
+  margin-left: 7%;
   font-size:4em;
   color:#1f1f1f;
   line-height: 5px;
@@ -761,7 +764,7 @@ a{
 
 .timeline-h2{
   margin-top: -1.7%;
-  margin-left: 3%;
+  margin-left: 7%;
   font-size:3em;
   color:#E24A68;
 }
@@ -1166,7 +1169,7 @@ footer{
   }
   
   .nav-items div{
-      font-size:20px;
+      font-size:16px;
   }
 
   .hero-section{
@@ -1595,6 +1598,21 @@ footer{
   font-size:2em;
 }
 
+.timeline-h2{
+  margin-top: -2.5%;
+}
+
+.connect-left h2{
+  font-size: 1.5rem;
+}
+.connect-left p{
+  font-size: 0.8rem;
+}
+
+.btn-black {
+  padding: 0.8rem 2.3rem;
+  font-size: 1rem;
+}
 }
 
 
@@ -1605,7 +1623,7 @@ footer{
 /* Responsive for iphone 12 pro */
 
 
-@media (max-width:500px) {
+@media (max-width:520px) {
 
   .navbar{
       width: 100%;
@@ -1633,7 +1651,7 @@ footer{
   }
   
   .nav-items div{
-      font-size:11px;
+      font-size:10px;
   }
 
   .hero-section{
@@ -1988,6 +2006,23 @@ footer{
 
 .footer-faded-text{
   font-size:1.5em;
+}
+
+.timeline-h2{
+  margin-top: -5%;
+}
+
+.connect-left h2{
+  font-size: 1rem;
+}
+.connect-left p{
+  font-size: 0.6rem;
+}
+
+.btn-black {
+  display: flex;
+  padding: 0.8rem 1.5rem;
+  font-size: 0.8rem;
 }
 
 }
