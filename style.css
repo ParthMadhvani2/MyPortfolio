@@ -39,8 +39,10 @@
     position: fixed;
     padding-top:1rem;
     padding-bottom: 2px;
-    background-color: rgba(114, 109, 153, 0.5);
+    background-color: rgba(114, 109, 153, 0.55);
+    backdrop-filter: blur(7px);
     z-index: 50;
+    border: 0.6px solid rgba(245, 245, 245, 0.608);
 }
 
 .logo{
@@ -62,7 +64,7 @@
 .logo-text{
     margin-top: -13px;
     margin-left:-0.2rem;
-    font-size:25px;
+    font-size:1.375rem;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -1124,9 +1126,9 @@ footer{
   transition:all 0.6s;
 }
 
-.link-wrapper div a:hover{
+/* .link-wrapper div a:hover{
   color:var(--bgOrange);
-}
+} */
 
 .icon-wrapper{
   display:flex;
@@ -1564,10 +1566,10 @@ footer{
   text-decoration:none;
   transition:all 0.6s;
 }
-
+/* 
 .link-wrapper div a:hover{
   color:var(--bgOrange);
-}
+} */
 
 .icon-wrapper{
   display:flex;
@@ -1655,7 +1657,7 @@ footer{
   }
 
   .hero-section{
-    display:grid;
+    flex-direction: column-reverse;
 }
 .hero-section-left{
   width:100%;
@@ -1700,7 +1702,10 @@ footer{
     font-size: 15px;
   }
   .hero-section-right{
-  left: 0.7%;
+  justify-content: center;
+  align-items: center;
+  left: -35%;
+  margin-top: -2rem;
  } 
   
   .user-image{
@@ -1717,14 +1722,12 @@ footer{
   .icon-dots{
     zoom: 57%;
     bottom:0rem;
-    right:93em;
   }
 
   .icon-cube{
     zoom: 80%;
     z-index:9;
     top:2em;
-    right:65em;
     animation-name: cubeRotate;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -1733,7 +1736,6 @@ footer{
   .icon-circle{
     zoom: 80%;
     z-index:9;
-    left:-1rem;
     bottom:0;
 } 
 
@@ -1745,13 +1747,11 @@ footer{
   .icon-plus{
     zoom: 50%;
     top:-1rem;
-    left: 16%;
   }
 
   @keyframes shakeEffectPlus {
     50%{
         top:2%;
-        left:10%
     }
   }
 
