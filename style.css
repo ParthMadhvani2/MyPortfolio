@@ -1146,7 +1146,7 @@ footer{
 @media (max-width:1200px) {
 
   .navbar{
-      width: 100%;
+      width: 99.75%;
       margin-top: -8.5rem;
       border-radius: 15px;
       padding-top:1rem;
@@ -1628,7 +1628,7 @@ footer{
 @media (max-width:520px) {
 
   .navbar{
-      width: 100%;
+    width: 99.5%;
       margin-top: -8.5rem;
       border-radius: 15px;
       padding-top:1rem;
