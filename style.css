@@ -1715,7 +1715,7 @@ footer{
 @media (max-width:520px) {
 
   .navbar{
-    width: 99.5%;
+      width: 99.5%;
       margin-top: -8.5rem;
       border-radius: 15px;
       padding-top:1rem;
@@ -2149,7 +2149,7 @@ footer{
 .btn-black {
   display: flex;
   padding: 0.8rem 1.5rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 }

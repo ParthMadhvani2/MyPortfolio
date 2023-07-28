@@ -265,7 +265,7 @@ footer{
     width:100vw;
   }
   .navbar{
-      width: 100%;
+      width: 99.75%;
       margin-top: -8.5rem;
       border-radius: 15px;
       padding-top:1rem;
@@ -328,13 +328,13 @@ footer{
 /* Responsive for iphone 12 pro */
 
 
-@media (max-width:500px) {
+@media (max-width:520px) {
 
   .container{
     width:100vw;
   }
   .navbar{
-      width: 100%;
+      width: 99.5%;
       margin-top: -8.5rem;
       border-radius: 15px;
       padding-top:1rem;
