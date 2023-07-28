@@ -82,7 +82,7 @@ margin-top: -12px;
 }
 .nav-items div a{
   color:rgb(255, 255, 255);
-  /* transition: all 5s ease; */
+  transition: all 5s ease;
 }
 
 a{
@@ -172,6 +172,7 @@ text-underline-position: below;
   position: relative;
   z-index: 1;
 }
+
 .btn-pink::before {
   content: "";
   position: absolute;
@@ -186,9 +187,11 @@ text-underline-position: below;
   transition: all 0.8s;
 
 }
+
 .btn-pink:hover::before {
   transform: scaleX(1);
 }
+
 .btn-pink:hover {
   border: solid 3px var(--bgOrange);
   color: rgb(255, 255, 255);
@@ -202,7 +205,7 @@ text-underline-position: below;
   }
 
   .icon:hover{
-    color:#e84849;
+    scale: 1.2;
   }
 
 
