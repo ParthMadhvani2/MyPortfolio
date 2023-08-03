@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  /* box-sizing:border-box; */
+  font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --bgOrange: #e84949;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    background-image: url(./images/userAsset/herobg.png);
+    object-fit: cover;
+}
+
+.container{
+    width:85%;
+    margin:0 auto;
+    
+}
+
+/* Navbar section */
+
+.navbar{
+  width: 85%;
+  margin-top: -8.5rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  position: fixed;
+  padding-top:1rem;
+  padding-bottom: 2px;
+  background-color: rgba(114, 109, 153, 0.55);
+  backdrop-filter: blur(7px);
+  z-index: 50;
+  border: 0.6px solid rgba(245, 245, 245, 0.608);
+}
+
+.logo{
+  margin-top: -13px;
+  margin-left: 5px;
+  width:60px;
+}
+
+.logo:hover{
+transform: scale(1.1);
+}
+
+.logo-container{
+  display:flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.logo-text{
+  margin-top: -13px;
+  margin-left:-0.2rem;
+  font-size:1.375rem;
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-items{
+margin-top: -12px;
+  display:flex;
+  gap:2rem;
+  padding: 0 4em;
+}
+
+.nav-items div{
+  font-size:16px;
+  font-weight:500;
+  cursor:pointer;
+ 
+}
+.nav-items div a{
+  color:rgb(255, 255, 255);
+  transition: all 5s ease;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav-items div a:hover {
+background-color: transparent;
+text-decoration:underline;
+text-underline-position: below;
+}
+
+.nav-items div:hover{
+  transition:0.8s;
+  font-weight: bolder;
+}
+
+.hero-section{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 10rem auto;
+    padding: 0 1rem;
+}
+
+.img-container{
+    position: relative;
+    width: 70vw;
+    pointer-events: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 20px #ffffff8e;
+}
+
+.role{
+    color: #5c54d0;
+    font-weight: 800;
+}
+
+.links{
+  display:inline-flex;
+
+}
+
+.resume{
+  font-size: 20px;
+  color: white;
+  padding-top: 0.8rem;
+  width:auto;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+}
+.resume:hover{
+  transition:0.9s;
+  font-weight: bolder;
+  color: var(--bgOrange);
+}
+
+.arrow{
+  width:16px;
+  height:16px;
+}
+
+.arrow:hover{
+  transform:translateX(5px);
+  color: var(--bgOrange);
+}
+
+.btn-pink {
+    margin: 10px;
+  background-color: var(--bgOrange);
+  width:auto;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-pink::before {
+  content: "";
+  position: absolute;
+  background-color: #00000070;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+
+}
+
+.btn-pink:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-pink:hover {
+  border: solid 3px var(--bgOrange);
+  color: rgb(255, 255, 255);
+}
+
+.icon{
+    cursor:pointer;
+    color:white;
+    font-size:35px;
+    transition:all 0.4s;
+  }
+
+.icon:hover{
+    scale: 1.2;
+}
+
+.tweets{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  position:relative;
+  gap:1rem;
+  justify-content: center;
+  zoom: 100%;
+}
+
+
+footer{
+  position:relative;
+  margin-top:-1px;
+  background-color: #343d68;
+  padding:2rem;
+}
+
+.footer-wrapper{
+  display:flex;
+  gap:1rem;
+  padding:1.2rem;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.footer-faded-text{
+  position:absolute;
+  left:0;
+  bottom:0;
+  color:#535c87;
+  user-select:none;
+  font-size:3em;
+}
+
+.link-wrapper{
+  display:flex;
+  gap:1.2rem;
+}
+
+.link-wrapper div a{
+  color:white;
+  text-decoration:none;
+  transition:all 0.6s;
+}
+
+.link-wrapper div a:hover{
+  color:var(--bgOrange);
+}
+
+.icon-wrapper{
+  display:flex;
+  gap:1rem;
+}
+
+/* Responsiveness */
+
+
+/* Responsive for 1000px */
+
+
+@media (max-width:1000px) {
+
+  .container{
+    width:100vw;
+  }
+  .navbar{
+      width: 99.75%;
+      margin-top: -8.5rem;
+      border-radius: 15px;
+      padding-top:1rem;
+      padding-bottom: 2px;   
+  }
+  
+  .logo{
+      margin-top: -13px;
+      margin-left: 5px;
+      width:40px;
+  }
+  
+  .logo-text{
+      font-size:20px;
+    }
+  
+  .nav-items{
+      margin-top: -12px;
+      display:flex;
+      gap:1rem;
+      padding: 0 1em;
+  }
+  
+  .nav-items div{
+      font-size:20px;
+  }
+
+  .resume{
+    font-size: 20px;
+    padding-top: 0.8rem;
+  }
+  
+  .arrow{
+    width:20px;
+    height:20px;
+  }
+  
+
+  .btn-pink {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  footer{
+    padding:2rem;
+  }
+  
+  .footer-wrapper{
+    display:grid;
+  }
+  
+  .footer-faded-text{
+    font-size:2em;
+  }
+}
+
+
+
+/* Responsive for iphone 12 pro */
+
+
+@media (max-width:520px) {
+
+  .container{
+    width:100vw;
+  }
+  .navbar{
+      width: 99.5%;
+      margin-top: -8.5rem;
+      border-radius: 15px;
+      padding-top:1rem;
+      padding-bottom: 2px;   
+  }
+  
+  .logo{
+      margin-top: -13px;
+      margin-left: 5px;
+      width:30px;
+  }
+  
+  .logo-text{
+      font-size:10px;
+    }
+  
+  .nav-items{
+      margin-top: -12px;
+      display:flex;
+      gap:1rem;
+      padding: 0 1em;
+  }
+  
+  .nav-items div{
+      font-size:10px;
+  }
+  
+  .resume{
+    font-size: 15px;
+    padding-top: 0.8rem;
+  }
+  
+  .arrow{
+    width:10px;
+    height:10px;
+  }
+  
+
+  .btn-pink {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .icon-wrapper{
+    display:flex;
+    zoom: 60%;
+    gap:1rem;
+  }
+
+  footer{
+    padding:1.5rem;
+  }
+  
+  .footer-wrapper{
+    display:grid;
+  }
+  
+  .footer-faded-text{
+    font-size:1.5em;
+  }
+}
