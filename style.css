@@ -589,6 +589,33 @@ a{
   #project5{
     background-image: url(./images/projects/Project5.png);
   }
+
+  .btn-black-project {
+    background-color: black;
+    width:auto;
+    color: white;
+    padding: 0.8rem 2.3rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: solid 3px transparent;
+    position: relative;
+    z-index: 1;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.592);
+    width: 12%;
+    margin: auto;
+  }
+  
+  .btn-black-project:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+  }
+  
+  .fa-code{
+    margin-right: 5px;
+  }
     
 /* Skills Section */
 
