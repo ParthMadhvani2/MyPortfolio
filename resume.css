@@ -256,10 +256,10 @@ footer{
 /* Responsiveness */
 
 
-/* Responsive for 1000px */
+/* Responsive for 1200px */
 
 
-@media (max-width:1000px) {
+@media (max-width:1200px) {
 
   .container{
     width:100vw;
