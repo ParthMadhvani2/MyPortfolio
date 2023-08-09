@@ -2184,3 +2184,46 @@ footer{
 }
 
 }
+
+
+/* Animation using Javascript */
+
+.animationX {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.1s;
+
+}
+.animationY {
+  opacity: 0;
+  transform: translateY(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.1s;
+
+}
+.animationZ {
+  opacity: 0;
+  transform: translateZ(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.3s;
+
+}
+.animationL {
+  opacity: 0;
+  transform: translate(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.1s;
+}
+.animationR {
+  opacity: 0;
+  transform: translate(300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.1s;
+
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
+}
