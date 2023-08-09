@@ -2183,14 +2183,55 @@ footer{
   font-size: 0.6rem;
 }
 
+/* Animation using Javascript */
+
+.animationX {
+  opacity: 1;
+
+}
+.animationXX {
+  opacity: 1;
+
+
+}
+.animationY {
+  opacity: 1;
+
+}
+.animationZ {
+  opacity: 1;
+
+}
+.animationL {
+  opacity: 1;
+}
+.animationR {
+  opacity: 1;
+
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 }
 
 
 /* Animation using Javascript */
+@media (min-width:1200px) {
+  
 
 .animationX {
   opacity: 0;
   transform: translateX(-300px);
+  transition: all 0.7s ease-out;
+  transition-delay: 0.1s;
+
+}
+.animationXX {
+  opacity: 0;
+  transform: translateX(300px);
   transition: all 0.7s ease-out;
   transition-delay: 0.1s;
 
@@ -2226,4 +2267,5 @@ footer{
 .scroll-animation {
   opacity: 1;
   transform: translateX(0);
+}
 }
