@@ -254,7 +254,6 @@ a{
     width: 360px;
     height: 380px;
     padding:2em;
-    filter: grayscale(1);
     transition: all 1s;
     animation: scaleImage 5s linear infinite;
     border-radius: 5%;
@@ -278,7 +277,6 @@ a{
 
     50%{
         transform:scale(1.1);
-        filter:grayscale(1);
         box-shadow: 3px 3px 10px black;
     }
 
@@ -288,7 +286,6 @@ a{
     }
     
   }
-
 
   .icon-dots{
     z-index:9;
@@ -301,13 +298,10 @@ a{
 
   @keyframes dotsAnimation {
     0%{
-        transform:translateY(0px);
-    }
-    50%{
-        transform: translateY(-16px);
+        transform:rotate(0deg);
     }
     100%{
-        transform: translateY(0px);
+        transform:rotate(360deg);
     }
     
   }
@@ -377,46 +371,6 @@ a{
         left:48%
     }
   }
-
-/* development-container */
-
-.dev-container{
-  position:relative;
-  display:flex;
-  padding:5rem;
-  margin:10rem auto;
-  gap:30px;
-}
-
-.dev-container-left{
-  width:100%;
-  display:flex;
-  flex-direction:column;
-}
-
-.dev-heading{
-  font-size:50px;
-  font-style: bolder;
-  color:rgb(131, 113, 247);
-  line-height: 50px;
-  text-align: center;
-  text-shadow:white 2px 2px 1px;
-}
-
-.dev-subHeading{
-  margin-top: 1rem;
-  margin-left: 25%;
-  margin-right: 25%;
-
-  width:50%;
-  text-align: center;
-  color: white;
-}
-
-.dev-subHeading p{
-  margin:15px 0;
-}
-
 
 /* Project section */
 
@@ -568,7 +522,8 @@ a{
   }
 
   .btn-project:hover{
-    border:none;
+    border: solid 3px var(--bgOrange);
+    color: rgb(255, 255, 255);
   }
 
   .project-card:hover .project-content{
@@ -1771,7 +1726,7 @@ footer{
   }
   
   .nav-items div{
-      font-size:10px;
+      font-size:8px;
   }
 
   .hero-section{
@@ -2181,38 +2136,6 @@ footer{
   display: flex;
   padding: 0.8rem 1.5rem;
   font-size: 0.6rem;
-}
-
-/* Animation using Javascript */
-
-.animationX {
-  opacity: 1;
-
-}
-.animationXX {
-  opacity: 1;
-
-
-}
-.animationY {
-  opacity: 1;
-
-}
-.animationZ {
-  opacity: 1;
-
-}
-.animationL {
-  opacity: 1;
-}
-.animationR {
-  opacity: 1;
-
-}
-
-.scroll-animation {
-  opacity: 1;
-  transform: translateX(0);
 }
 
 }

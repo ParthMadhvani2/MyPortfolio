@@ -44,60 +44,80 @@
 }
 
 .logo{
-  margin-top: -13px;
-  margin-left: 5px;
-  width:60px;
+    margin-top: -13px;
+    margin-left: 5px;
+    width:60px;
 }
 
 .logo:hover{
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .logo-container{
-  display:flex;
-  justify-content: baseline;
-  align-items: center;
+    display:flex;
+    justify-content: baseline;
+    align-items: center;
 }
 
 .logo-text{
-  margin-top: -13px;
-  margin-left:-0.2rem;
-  font-size:1.375rem;
-  color: white;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+    margin-top: -13px;
+    margin-left:-0.2rem;
+    font-size:1.375rem;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
 
 .nav-items{
-margin-top: -12px;
-  display:flex;
-  gap:2rem;
-  padding: 0 4em;
+  margin-top: -12px;
+    display:flex;
+    gap:2rem;
+    padding: 0 4em;
 }
 
 .nav-items div{
-  font-size:16px;
-  font-weight:500;
-  cursor:pointer;
- 
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+   
 }
 .nav-items div a{
-  color:rgb(255, 255, 255);
-  transition: all 5s ease;
+    color:rgb(255, 255, 255);
+    /* transition: all 5s ease; */
 }
 
 a{
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .nav-items div a:hover {
-background-color: transparent;
-text-decoration:underline;
-text-underline-position: below;
+  background-color: transparent;
+  text-decoration:underline;
+  text-underline-position: below;
 }
 
 .nav-items div:hover{
-  transition:0.8s;
-  font-weight: bolder;
+    transition:0.8s;
+    font-weight: bolder;
+}
+
+.resume-nav{
+  color: white;
+  width:auto;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  position: relative;
+}
+
+.icon{
+  cursor:pointer;
+  color:white;
+  font-size:35px;
+  transition:all 0.4s;
+}
+
+.icon:hover{
+  scale: 1.2;
 }
 
 .hero-section{
@@ -242,10 +262,6 @@ footer{
   color:white;
   text-decoration:none;
   transition:all 0.6s;
-}
-
-.link-wrapper div a:hover{
-  color:var(--bgOrange);
 }
 
 .icon-wrapper{
@@ -396,47 +412,59 @@ footer{
   .footer-faded-text{
     font-size:1.5em;
   }
+
 }
 
 
 /* Animation using Javascript */
+@media (min-width:1200px) {
+  
 
-.animationX {
-  opacity: 0;
-  transform: translateX(-300px);
-  transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
-
-}
-.animationY {
-  opacity: 0;
-  transform: translateY(-300px);
-  transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
-
-}
-.animationZ {
-  opacity: 0;
-  transform: translateZ(-300px);
-  transition: all 0.7s ease-out;
-  transition-delay: 0.3s;
-
-}
-.animationL {
-  opacity: 0;
-  transform: translate(-300px);
-  transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
-}
-.animationR {
-  opacity: 0;
-  transform: translate(300px);
-  transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
-
-}
-
-.scroll-animation {
-  opacity: 1;
-  transform: translateX(0);
-}
+  .animationX {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.1s;
+  
+  }
+  .animationXX {
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.1s;
+  
+  }
+  .animationY {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.1s;
+  
+  }
+  .animationZ {
+    opacity: 0;
+    transform: translateZ(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.3s;
+  
+  }
+  .animationL {
+    opacity: 0;
+    transform: translate(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.1s;
+  }
+  .animationR {
+    opacity: 0;
+    transform: translate(300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.1s;
+  
+  }
+  
+  .scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  }
+  
