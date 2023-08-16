@@ -1,6 +1,7 @@
 const the_animationX = document.querySelectorAll('.animationX')
 const the_animationXX = document.querySelectorAll('.animationXX')
 const the_animationY = document.querySelectorAll('.animationY')
+const the_animationYY = document.querySelectorAll('.animationYY')
 const the_animationZ = document.querySelectorAll('.animationZ')
 const the_animationL = document.querySelectorAll('.animationL')
 const the_animationR = document.querySelectorAll('.animationR')
@@ -63,6 +64,26 @@ const observerY = new IntersectionObserver((entries) => {
 //
 for (let i = 0; i < the_animationY.length; i++) {
     const elements = the_animationY[i];
+ 
+     observerY.observe(elements);
+   } 
+
+   const observerYY = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('scroll-animation')
+        }
+            else {
+                entry.target.classList.remove('scroll-animation')
+            }
+        
+    })
+},
+   { threshold: 0.5
+   });
+//
+for (let i = 0; i < the_animationYY.length; i++) {
+    const elements = the_animationYY[i];
  
      observerY.observe(elements);
    } 
