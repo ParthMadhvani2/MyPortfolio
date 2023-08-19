@@ -37,8 +37,6 @@
     justify-content:space-between;
     align-items:center;
     position: fixed;
-    padding-top:1rem;
-    padding-bottom: 2px;
     background-color: rgba(114, 109, 153, 0.55);
     backdrop-filter: blur(7px);
     z-index: 50;
@@ -46,8 +44,8 @@
 }
 
 .logo{
-    margin-top: -13px;
-    margin-left: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
     width:60px;
 }
 
@@ -62,15 +60,15 @@
 }
 
 .logo-text{
-    margin-top: -13px;
-    margin-left:-0.2rem;
+    padding-top: -13px;
+    padding-left:-0.2rem;
     font-size:1.375rem;
     color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
 .nav-items{
-    margin-top: -12px;
+    padding-top: 20px;
     display:flex;
     gap:2rem;
     padding: 0 2em;
@@ -80,8 +78,8 @@
     font-size:16px;
     font-weight:500;
     cursor:pointer;
-   
 }
+
 .nav-items div a{
     color:rgb(255, 255, 255);
     /* transition: all 5s ease; */
@@ -163,7 +161,7 @@ a{
     width: 70%;
     font-weight: 500;
     color: white;
-    line-height: 25px;
+    line-height: 23px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -174,6 +172,7 @@ a{
 .links{
   display:inline-flex;
   margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .resume{
@@ -477,7 +476,7 @@ a{
     display:flex;
     flex-direction:column;
     color:white;
-    padding:2em;
+    padding:1em;
     bottom:20%;
     z-index:5;
     gap:1em;
@@ -494,7 +493,7 @@ a{
   }
 
   .project-skills-container{
-    width:60%;
+    width:80%;
     display:flex;
     gap:10px;
     flex-wrap:wrap;
@@ -517,10 +516,9 @@ a{
     font-style: italic;
   }
 
-
   .btn-grp{
     display:flex;
-    gap:0.9rem;
+    gap:1rem;
     align-items:center;
   }
 
@@ -568,6 +566,7 @@ a{
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.592);
     width: 12%;
     margin: auto;
+
   }
   
   .btn-black-project:hover {
@@ -1196,13 +1195,12 @@ footer{
   .navbar{
       width: 99.75%;
       margin-top: -8.5rem;
-      padding-top:1rem;
-      padding-bottom: 2px;   
   }
   
   .logo{
-      margin-top: -13px;
-      margin-left: 10px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 10px;
       width:40px;
   }
   
@@ -1211,7 +1209,7 @@ footer{
     }
   
   .nav-items{
-      margin-top: -12px;
+      padding-top: 10px;
       display:flex;
       gap:1rem;
       padding: 0 1em;
@@ -1695,36 +1693,49 @@ footer{
 }
 }
 
+.navbar-link-toggle {
+  display: none;
+}
 
-
+.fa-bars{
+  color: white;
+}
 
 
 
 /* Responsive for iphone 12 pro */
 
 
-@media (max-width:520px) {
+@media (max-width:550px) {
 
   .navbar{
       width: 99.5%;
       margin-top: -8.5rem;
-      padding-top:1rem;
-      padding-bottom: 2px;   
+      padding-top:2px;   
   }
   
   .logo{
-      margin-top: -13px;
-      margin-left: 10px;
+      padding-top: 5px;
+      padding-left: 15px;
       width:30px;
   }
   
   .logo-text{
-      font-size:11px;
+      font-size:15px;
+      padding-top: 0px;
     }
   
+  .navbar-link-toggle {
+      align-self: flex-end;
+      display: initial;
+      cursor: pointer;
+      padding: 0 1em 0.8rem;
+      align-items: center;
+  }  
+  
   .nav-items{
-      margin-top: -12px;
-      display:flex;
+      padding-top: -12px;
+      display:none;
       gap:1rem;
       padding: 0 1em;
   }
@@ -1735,7 +1746,9 @@ footer{
 
   .hero-section{
     flex-direction: column-reverse;
+    margin-left: 1%;
 }
+
 .hero-section-left{
   width:100%;
   margin-top: 1px;
@@ -1843,7 +1856,7 @@ footer{
     padding-top: 2rem;
     color: var(--bgOrange);
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .project-container {
     padding: 0.3rem;
@@ -1897,7 +1910,7 @@ footer{
 .skills-container{
   position:relative;
   display:grid;
-  padding:3rem;
+  padding:10%;
   margin:3rem auto;
   gap:30px;
 }
@@ -1911,6 +1924,7 @@ footer{
   width:28%;
   display:flex;
   flex-direction:column;
+  margin-bottom: 2%;
 }
 
 .skill-container-right{
@@ -1920,6 +1934,7 @@ width:24%;
 position:relative;
 gap:1rem;
 justify-content: center;
+margin-bottom: 5%;
 }
 
 .skill-fade-text{
@@ -1930,11 +1945,11 @@ justify-content: center;
 
 
 .skill-heading{
-  font-size:40px;
+  font-size:35px;
 }
 
 .caps{
-  font-size:70px;
+  font-size:60px;
 }
 
 
@@ -1986,7 +2001,7 @@ justify-content: center;
 .contactus-heading{
   margin-top: -0.5%;
   margin-left: 20%;
-  font-size:3.5em;
+  font-size:2.5em;
   
 }
 .contactus-heading-down{
@@ -2035,7 +2050,7 @@ justify-content: center;
 
 #submit-btn{
   border:none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 1rem 0;
 }
 
@@ -2049,7 +2064,7 @@ justify-content: center;
 }
 
 .contactus-img{
-  width: 200px;
+  width: 160px;
   height: 200px;
 }
 .hr{
@@ -2072,13 +2087,18 @@ justify-content: center;
   width: 90%;
   margin-left: 5%;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .contactus-below a{
   cursor: pointer;
   margin: auto;
   color:rgb(86, 144, 253);
-  font-size: medium;
+  font-size: 0.8rem;
+}
+
+.contactus-below address{
+  font-size: 0.8rem;
 }
 
 .link-wrapper{
@@ -2102,18 +2122,40 @@ justify-content: center;
   gap:1rem;
 }
 
+.connect-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-h1{
+  font-size: 3rem;
+}
+
+.timeline-h2{
+  margin-top: -5%;
+  font-size:2em;
+}
+
 .connect-left h2{
-  font-size: 1.1rem;
+  font-size: 1rem;
+  padding-bottom: 3%;
 }
 .connect-left p{
-  font-size:0.7rem;
+  font-size: 0.7rem;
+  padding-bottom: 4%;
 }
 
 .btn-black {
-  font-size: 0.6rem;
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 0.5rem;
 }
+
 .btn-black-project {
-  font-size: 0.6rem;
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 0.5rem;
+  width: 21%;
 }
 
 footer{
@@ -2126,23 +2168,6 @@ footer{
 
 .footer-faded-text{
   font-size:1.5em;
-}
-
-.timeline-h2{
-  margin-top: -5%;
-}
-
-.connect-left h2{
-  font-size: 1rem;
-}
-.connect-left p{
-  font-size: 0.6rem;
-}
-
-.btn-black {
-  display: flex;
-  padding: 0.8rem 1.5rem;
-  font-size: 0.6rem;
 }
 
 }

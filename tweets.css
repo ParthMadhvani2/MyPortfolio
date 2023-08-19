@@ -35,8 +35,6 @@
   justify-content:space-between;
   align-items:center;
   position: fixed;
-  padding-top:1rem;
-  padding-bottom: 2px;
   background-color: rgba(114, 109, 153, 0.55);
   backdrop-filter: blur(7px);
   z-index: 50;
@@ -44,8 +42,8 @@
 }
 
 .logo{
-  margin-top: -13px;
-  margin-left: 20px;
+  padding-top: 5px;
+  padding-left: 20px;
   width:60px;
 }
 
@@ -60,15 +58,15 @@ transform: scale(1.1);
 }
 
 .logo-text{
-  margin-top: -13px;
-  margin-left:-0.2rem;
+  padding-top: -13px;
+  padding-left:-0.2rem;
   font-size:1.375rem;
   color: white;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nav-items{
-margin-top: -12px;
+  padding-top: 20px;
   display:flex;
   gap:2rem;
   padding: 0 2em;
@@ -78,8 +76,8 @@ margin-top: -12px;
   font-size:16px;
   font-weight:500;
   cursor:pointer;
- 
 }
+
 .nav-items div a{
   color:rgb(255, 255, 255);
   /* transition: all 5s ease; */
@@ -284,32 +282,32 @@ footer{
     width:100vw;
   }
   .navbar{
-      width: 99.75%;
-      margin-top: -8.5rem;
-      padding-top:1rem;
-      padding-bottom: 2px;   
+    width: 99.75%;
+    margin-top: -8.5rem;
+}
+
+.logo{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    width:40px;
+}
+
+.logo-text{
+    font-size:20px;
   }
-  
-  .logo{
-      margin-top: -13px;
-      margin-left: 10px;
-      width:40px;
-  }
-  
-  .logo-text{
-      font-size:20px;
-    }
-  
-  .nav-items{
-      margin-top: -12px;
-      display:flex;
-      gap:1rem;
-      padding: 0 1em;
-  }
-  
-  .nav-items div{
-      font-size:20px;
-  }
+
+.nav-items{
+    padding-top: 10px;
+    display:flex;
+    gap:1rem;
+    padding: 0 1em;
+}
+
+.nav-items div{
+    font-size:16px;
+}
+
 
   .resume{
     font-size: 20px;
@@ -359,43 +357,56 @@ footer{
   }
 }
 
+.navbar-link-toggle {
+  display: none;
+}
+
+.fa-bars{
+  color: white;
+}
+
 
 
 /* Responsive for iphone 12 pro */
 
 
-@media (max-width:520px) {
+@media (max-width:550px) {
 
-  .container{
-    width:100vw;
-  }
   .navbar{
-    width: 99.5%;
-    margin-top: -8.5rem;
-    padding-top:1rem;
-    padding-bottom: 2px;   
-}
-
-.logo{
-    margin-top: -13px;
-    margin-left: 10px;
-    width:30px;
-}
-
-.logo-text{
-    font-size:11px;
+      width: 99.5%;
+      margin-top: -8.5rem;
+      padding-top:2px;   
   }
-
-.nav-items{
-    margin-top: -12px;
-    display:flex;
-    gap:1rem;
-    padding: 0 1em;
-}
-
-.nav-items div{
-    font-size:8px;
-}
+  
+  .logo{
+      padding-top: 5px;
+      padding-left: 15px;
+      width:30px;
+  }
+  
+  .logo-text{
+      font-size:15px;
+      padding-top: 0px;
+    }
+  
+  .navbar-link-toggle {
+      align-self: flex-end;
+      display: initial;
+      cursor: pointer;
+      padding: 0 1em 0.8rem;
+      align-items: center;
+  }  
+  
+  .nav-items{
+      padding-top: -12px;
+      display:none;
+      gap:1rem;
+      padding: 0 1em;
+  }
+  
+  .nav-items div{
+      font-size:8px;
+  }
   .resume{
     font-size: 12px;
     padding-top: 0.8rem;
