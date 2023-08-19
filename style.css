@@ -32,7 +32,7 @@
 .navbar{
     width: 1200px;
     margin-top: -8.5rem;
-    border-radius: 15px;
+    border-radius: 50px;
     display: flex;
     justify-content:space-between;
     align-items:center;
@@ -47,7 +47,7 @@
 
 .logo{
     margin-top: -13px;
-    margin-left: 5px;
+    margin-left: 20px;
     width:60px;
 }
 
@@ -70,10 +70,10 @@
   }
 
 .nav-items{
-  margin-top: -12px;
+    margin-top: -12px;
     display:flex;
     gap:2rem;
-    padding: 0 4em;
+    padding: 0 2em;
 }
 
 .nav-items div{
@@ -94,7 +94,7 @@ a{
 .nav-items div a:hover {
   background-color: transparent;
   text-decoration:underline;
-  text-underline-position: below;
+  text-underline-position:below;
 }
 
 .nav-items div:hover{
@@ -1196,14 +1196,13 @@ footer{
   .navbar{
       width: 99.75%;
       margin-top: -8.5rem;
-      border-radius: 15px;
       padding-top:1rem;
       padding-bottom: 2px;   
   }
   
   .logo{
       margin-top: -13px;
-      margin-left: 5px;
+      margin-left: 10px;
       width:40px;
   }
   
@@ -1663,6 +1662,9 @@ footer{
 .btn-black {
   font-size: 1rem;
 }
+.btn-black-project {
+  font-size: 1rem;
+}
 
 footer{
   padding:2rem;
@@ -1706,14 +1708,13 @@ footer{
   .navbar{
       width: 99.5%;
       margin-top: -8.5rem;
-      border-radius: 15px;
       padding-top:1rem;
       padding-bottom: 2px;   
   }
   
   .logo{
       margin-top: -13px;
-      margin-left: 5px;
+      margin-left: 10px;
       width:30px;
   }
   
@@ -2109,6 +2110,9 @@ justify-content: center;
 }
 
 .btn-black {
+  font-size: 0.6rem;
+}
+.btn-black-project {
   font-size: 0.6rem;
 }
 

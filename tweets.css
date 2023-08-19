@@ -30,7 +30,7 @@
 .navbar{
   width: 1200px;
   margin-top: -8.5rem;
-  border-radius: 15px;
+  border-radius: 50px;
   display: flex;
   justify-content:space-between;
   align-items:center;
@@ -45,7 +45,7 @@
 
 .logo{
   margin-top: -13px;
-  margin-left: 5px;
+  margin-left: 20px;
   width:60px;
 }
 
@@ -71,7 +71,7 @@ transform: scale(1.1);
 margin-top: -12px;
   display:flex;
   gap:2rem;
-  padding: 0 4em;
+  padding: 0 2em;
 }
 
 .nav-items div{
@@ -286,14 +286,13 @@ footer{
   .navbar{
       width: 99.75%;
       margin-top: -8.5rem;
-      border-radius: 15px;
       padding-top:1rem;
       padding-bottom: 2px;   
   }
   
   .logo{
       margin-top: -13px;
-      margin-left: 5px;
+      margin-left: 10px;
       width:40px;
   }
   
@@ -373,14 +372,13 @@ footer{
   .navbar{
     width: 99.5%;
     margin-top: -8.5rem;
-    border-radius: 15px;
     padding-top:1rem;
     padding-bottom: 2px;   
 }
 
 .logo{
     margin-top: -13px;
-    margin-left: 5px;
+    margin-left: 10px;
     width:30px;
 }
 
@@ -399,7 +397,7 @@ footer{
     font-size:8px;
 }
   .resume{
-    font-size: 15px;
+    font-size: 12px;
     padding-top: 0.8rem;
   }
   
