@@ -107,17 +107,6 @@ a{
   position: relative;
 }
 
-.icon{
-  cursor:pointer;
-  color:white;
-  font-size:35px;
-  transition:all 0.4s;
-}
-
-.icon:hover{
-  scale: 1.2;
-}
-
 .hero-section{
     position:relative;
     display:flex;
@@ -216,16 +205,21 @@ a{
 }
 
 .icon{
-    cursor:pointer;
-    color:white;
-    font-size:35px;
-    transition:all 0.4s;
-  }
+  cursor:pointer;
+  color:black;
+  background-color: white;
+  border: 0.2px solid whitesmoke;
+  box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.7);
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 35px;
+  transition:all 0.2s;
+}
 
-  .icon:hover{
-    scale: 1.2;
-  }
-
+.icon:hover{
+  scale: 1.2;
+  transform: translateY(-8px);
+}
 
 footer{
   position:relative;
@@ -265,8 +259,34 @@ footer{
 .icon-wrapper{
   display:flex;
   gap:1rem;
+  background-color: #e2e8f084;
+  box-shadow: inset 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+  max-width: fit-content;
+  padding: 8px;
+  border-radius: 12px;
 }
 
+.tooltiptext {
+  visibility: hidden;
+  width: fit-content;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: -80%;
+  left: -2px ;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  z-index: 1;
+}
 /* Responsiveness */
 
 
