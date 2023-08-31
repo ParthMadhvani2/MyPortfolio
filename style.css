@@ -1215,6 +1215,10 @@ footer{
   z-index: 1;
 }
 
+
+
+
+
 /* Responsiveness */
 
 
@@ -1737,7 +1741,7 @@ footer{
 /* Responsive for iphone 12 pro */
 
 
-@media (max-width:550px) {
+@media (max-width:480px) {
 
   .navbar{
       width: 99.5%;
@@ -2205,7 +2209,7 @@ footer{
 
 
 /* Animation using Javascript */
-@media (min-width:1200px) {
+@media (min-width:1000px) {
   
 
 .animationX {
@@ -2240,7 +2244,7 @@ footer{
 .animationZ {
   opacity: 0;
   transform: translateZ(-300px);
-  transition: all 0.7s ease-out;
+  transition: all 0.7s ease-in-out;
   transition-delay: 0.3s;
 
 }
