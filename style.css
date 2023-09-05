@@ -258,7 +258,7 @@ a{
   object-fit: fill;
   width: 360px;
   height: 380px;
-  padding:2em;
+  padding:1.5em;
   transition: all 1s;
   animation: scaleImage 5s linear infinite;
   border-radius: 5%;
@@ -279,7 +279,7 @@ a{
     z-index: -9;
     position: absolute;
     width: 450px;
-    height: 500px;
+    height: 460px;
     border-radius: 5%;
     top: -2%;
     left: -3%;
@@ -688,6 +688,7 @@ a{
   margin:15px 0;
 }
 
+
 /* Connect-section */
 .connect-section{
   margin: 7%;
@@ -740,6 +741,37 @@ a{
 .connect-des i:hover{
   box-shadow: none;
 }
+
+
+/* ====== STATISTICS ====== */
+.statistics-section{
+  margin: 0.1%;
+  text-align: center;
+}
+
+.statistics-title{
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.statistics-subtitle{
+  font-size: 1em;
+  margin: auto;
+}
+
+.statistics-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.statistics-container img {
+  width: 400px;
+}
+
 
 /* connect-box */
 
@@ -1345,7 +1377,7 @@ footer{
     z-index: -9;
     position: absolute;
     width: 350px;
-    height: 300px;
+    height: 360px;
     border-radius: 5%;
     top: -2%;
     left: -3%;
@@ -1529,6 +1561,38 @@ footer{
 .skills-logo:hover{
   transform:scale(1.2);
 }
+
+
+/* ====== STATISTICS ====== */
+.statistics-section{
+  margin: 0.1%;
+  text-align: center;
+}
+
+.statistics-title{
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.statistics-subtitle{
+  font-size: 0.8em;
+}
+
+.statistics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.statistics-container img {
+  margin: 1%;
+  width: 400px;
+}
+
 
 
 /* Connect-section */
@@ -1759,7 +1823,7 @@ footer{
 /* Responsive for iphone 12 pro */
 
 
-@media (max-width:480px) {
+@media (max-width:500px) {
 
   .navbar{
       width: 99.5%;
@@ -1847,20 +1911,21 @@ footer{
   .hero-section-right{
   justify-content: center;
   align-items: center;
-  left: -35%;
+  left: -36%;
   margin-top: -2rem;
  } 
   
   .user-image{
     margin:10px;
-    width: 260px;
-    height: 280px;
-    padding:2em;
+    width: 240px;
+    height: 260px;
+    padding:1em;
   }
-    .user-image img{
-    width: 100%;
-    height: 100%;
-    }
+  
+  .user-image img{
+  width: 100%;
+  height: 100%;
+  }
   
   .icon-dots{
     zoom: 57%;
@@ -2004,6 +2069,37 @@ margin-bottom: 5%;
 .caps{
   font-size:60px;
 }
+
+/* ====== STATISTICS ====== */
+.statistics-section{
+  margin: 0.1%;
+  text-align: center;
+}
+
+.statistics-title{
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1%;
+}
+
+.statistics-subtitle{
+  font-size: 0.8em;
+}
+
+.statistics-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.statistics-container img {
+  margin: 0.5%;
+  width: 100%;
+}
+
 
 
 /* Connect-section */
