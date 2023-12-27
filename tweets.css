@@ -15,7 +15,7 @@
     height:100vh;
     overflow-y:auto;
     overflow-x: hidden;
-    background-image: url(./images/userAsset/herobg.png);
+    background-color: rgb(20,20,32);
     object-fit: cover;
 }
 
