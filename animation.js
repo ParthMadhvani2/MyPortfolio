@@ -79,7 +79,7 @@ for (let i = 0; i < the_animationY.length; i++) {
         
     })
 },
-   { threshold: 0.5
+   { threshold: 0.8
    });
 //
 for (let i = 0; i < the_animationYY.length; i++) {

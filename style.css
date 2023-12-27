@@ -17,8 +17,7 @@
     height:100vh;
     overflow-y:auto;
     overflow-x: hidden;
-    background-image: url(./images/userAsset/herobg.png);
-    object-fit: cover;
+    background-color: rgb(20,20,32);
 }
 
 .container{
@@ -147,7 +146,7 @@ a{
 }
 
 .hero-section-heading{
-    font-size: 40px;
+    font-size: 35px;
     color: #ffffff;
     font-weight: 500;
 }
@@ -166,7 +165,7 @@ a{
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
-    color: white;
+    color: rgb(182, 184, 197);
     line-height: 23px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -267,12 +266,6 @@ a{
   border-bottom-left-radius: 110px 19px;
   border-bottom-right-radius: 120px 24px;
   border: solid 3px #6e7491;
-  /* border: solid white;
-  border-color: white;
-  float:left; 
-  border-width: 5px 3px 3px 5px;
-  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
-  transform: rotate(2deg); */
 }
 
 .user-image img{
@@ -305,111 +298,26 @@ a{
     
 }
 
-.icon-dots{
-    z-index:9;
-    bottom:-1rem;
-    right:0;
-    animation-name:dotsAnimation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes dotsAnimation {
-    0%{
-        transform:rotate(0deg);
-    }
-    100%{
-        transform:rotate(360deg);
-    }
-    
-}
-
-.icon-cube{
-    z-index:9;
-    top:-1em;
-    right:1em;
-    animation-name: cubeRotate;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes cubeRotate {
-    0%{
-        transform: rotateY(0deg) translateY(0px);
-    }
-    50%{
-        transform:  rotateY(180deg) translateY(-12px);
-    }
-    100%{
-        transform:  rotateY(360deg) translateY(0px);
-    }
-}
-
-.icon-circle{
-    z-index:9;
-    left:-1rem;
-    bottom:0;
-    animation-name:shakeEffect;
-    animation-duration: 6s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-} 
- 
-@keyframes shakeEffect {
-  
-    50%{
-        left:5%;
-        bottom:10%;
-    }
- 
-}
-
-.icon-zigzag{
-    z-index:9;
-    top:1em;
-    left:-1em;
-    animation:zigzagAnimation 5s ease-in infinite;
-}
-
-@keyframes zigzagAnimation{
-    50%{
-        left:5%;
-        top:2%;
-    }
-}
-
-.icon-plus{
-    z-index:9;
-    top:-1rem;
-    left: 50%;
-    animation:shakeEffectPlus 5s ease-in infinite;
-}
-
-@keyframes shakeEffectPlus {
-    50%{
-        top:2%;
-        left:48%
-    }
-}
 
 /* Project section */
 
 .project-section{
-    background-color: rgb(231,231,231,0.8);
-    margin-top:4rem;
+    background-color: rgb(32,32,43);
+    margin:4rem;
+    border-radius: 2rem;
+    border: #343d68 2px dashed;
 }
 
 .page-header{
     color:var(--bgOrange);
-    font-size:100px;
+    font-size:80px;
     text-align:center;
     padding-top:30px;
-    text-shadow: #1f1f1f 10px -7px 2px ;
 }
 
 .project-img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .project-container{
@@ -423,13 +331,12 @@ a{
 
 .project-card{
     border-radius: 10px;
-    width:90%;
-    height:550px;
-    background-image: url(./images/projects/Project1.png);
+    width:80%;
+    height:500px;
     background-size: cover;
     background-repeat: no-repeat;
     position:relative;
-    box-shadow:0px 0px 40px #1f1f1f;
+    /* box-shadow:0px 0px 40px #1f1f1f; */
 }
 
 .project-card::after{
@@ -466,7 +373,7 @@ a{
 
 .project-number{
     position:absolute;
-    font-size:200px;
+    font-size:150px;
     font-weight:600;
     color:white;
     z-index:10;
@@ -576,12 +483,12 @@ a{
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0s;
     font-weight: 500;
     border: solid 3px transparent;
     position: relative;
     z-index: 1;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.592);
+    /* box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.592); */
     width: 12%;
     margin: auto;
     margin-bottom: 2rem;
@@ -589,7 +496,7 @@ a{
   }
   
   .btn-black-project:hover {
-    color: rgb(255, 255, 255);
+    border: 3px solid #343d68 ;
     box-shadow: none;
   }
   
@@ -662,26 +569,31 @@ a{
 }
 
 .skills-logo:hover{
-  transform:scale(1.2);
+  transform:scale(1.1);
 }
 
 
 .skill-heading{
   font-size:50px;
   font-style: bold;
-  color: var(--bgOrange);
+  color: white;
   line-height: 50px;
 }
 
 .caps{
   font-size:90px;
+  color: #5c54d0;
 }
 
 .skill-subHeading{
   margin-top: 1rem;
   width:85%;
+  padding: 5%;
   text-align: justify;
-  color: white;
+  color: rgb(159, 163, 180);
+  background-color: rgba(114, 109, 153, 0.15);
+  border: #343d68 2px dashed;
+  border-radius: 2rem;
 }
 
 .skill-subHeading p{
@@ -734,7 +646,7 @@ a{
   border-radius: 100%;
   color: white;
   margin:4%;
-  box-shadow: 1px 18px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 18px 10px rgba(0, 0, 0, 0.1); */
   transition: all 0.5s;
 }
 
@@ -834,13 +746,15 @@ a{
 
 /* Featured Timeline */
 .design-section {
-  --color: rgba(30, 30, 30);
-  --bgColor: rgba(245, 245, 245);
+  --bgColor: rgba(114, 109, 153, 0.15);
+  --color: rgba(245, 245, 245);
   min-height: 100vh;
   display: grid;
   align-content: center;
   gap: 2rem;
   padding: 2rem;
+  margin: 2rem;
+  border-radius: 4rem;
   font-family: "Poppins", sans-serif;
   color: var(--color);
   background: var(--bgColor);
@@ -851,7 +765,7 @@ a{
   margin-top: 3%;
   margin-left: 7%;
   font-size:4em;
-  color:#1f1f1f;
+  color: white;
   line-height: 5px;
   z-index: 1;
 }
@@ -864,16 +778,16 @@ a{
 }
 
 .design-section a{
-  color:black;
+  color:white;
 }
 .design-section a:hover{
   text-decoration: underline;
 }
 
 .timeline-box{
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid rgba(245, 245, 245, 0.608);
+  border-left: 2px solid rgba(245, 245, 245, 0.608);
+  border-bottom: 2px solid rgba(245, 245, 245, 0.608);
 }
 
 ul {
@@ -986,6 +900,7 @@ ul li .title {
 ul li .descr {
   padding-block-end: 1.5rem;
   font-weight: 300;
+  color: rgb(159, 163, 180);
 }
 
 /* shadows */
@@ -1055,7 +970,6 @@ ul li .descr::before {
 
 .contactus-form-container{
   width:100%;
-  background-color: rgb(231,231,231);
 }
 
 .contactus-heading{
@@ -1064,7 +978,7 @@ ul li .descr::before {
   margin-top: -6.5%;
   margin-left: 4%;
   font-size:4em;
-  color:#1f1f1f;
+  color:white;
   line-height: 10px;
   
 }
@@ -1073,7 +987,7 @@ ul li .descr::before {
   display: flex;
   margin-left: 4%;
   font-size:3em;
-  color:mediumpurple;
+  color: #5c54d0;
   z-index:-10;
 }
 
@@ -1081,7 +995,7 @@ ul li .descr::before {
   margin-left: 40px;
   margin-top:70px ;
   font-size:2rem;
-  color:#343d68aa;
+  color: #535c87;
   text-transform: capitalize;
 }
 
@@ -1103,27 +1017,25 @@ ul li .descr::before {
   margin: 2rem 5rem;
 }
 
-
-
 .formfield-container{
   width:100%;
 }
 
-.formfield:hover{
-  background-color: #ffffff96;
-}
-
 .formfield{
+  background-color: rgba(245, 245, 245);
   width:100%;
   height:42px;
   padding: 0 2rem;
   font-size:18px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #939393;
   font-weight:500;
   border:none;
   margin-top:27px;
-  border: 1px solid rgba(0, 0, 0, 0.497);
+  border: 1px solid rgba(114, 109, 153, 0.35);
+}
+
+.formfield:hover{
+  background-color: rgba(245, 245, 245, 0.9);
 }
 
 .formfield-textarea{
@@ -1134,7 +1046,6 @@ ul li .descr::before {
 .hover-btn{
   --x: 50%;
 	--y: 50%;
-	
 	position: relative;
 	appearance: none;
 	padding: 1em 2em;
@@ -1160,6 +1071,7 @@ ul li .descr::before {
   width: 400px;
   height: 400px;
 }
+
 .hr{
   width:100%;
   text-align: center;
@@ -1176,7 +1088,7 @@ ul li .descr::before {
 }
 
 .contactus-below p{
-  color:rgb(90, 90, 90);
+  color:rgb(175, 162, 162);
   width: 100%;
   text-align: center;
 }
@@ -1184,8 +1096,12 @@ ul li .descr::before {
 .contactus-below a{
   cursor: pointer;
   margin: auto;
-  color:rgb(86, 144, 253);
+  color: #8d85fb;
   font-size: medium;
+}
+
+address{
+  color: whitesmoke;
 }
 
 /* contactus button*/ 
@@ -1311,6 +1227,7 @@ footer{
 
   .hero-section{
     display:flex;
+    margin-left: 2rem;
 }
 .hero-section-left{
   /* width:100%; */
@@ -1332,7 +1249,6 @@ footer{
     margin-top: 1rem;
     width: 60%;
     font-weight: 500;
-    color: white;
     line-height: 23px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -1359,8 +1275,9 @@ footer{
     border-radius: 5px;
     font-size: 20px;
   }
+
  .hero-section-right{
-  left: -25%;
+  left: -20%;
  }
   .user-image{
     object-fit: fill;
@@ -1384,66 +1301,7 @@ footer{
     }
 
 
-  .icon-dots{
-    zoom: 60%;
-    z-index:9;
-    bottom:2rem;
-    right:0;
-    animation-name:dotsAnimation;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-  }
-
-
-  .icon-cube{
-    zoom: 70%;
-    z-index:9;
-    top:1em;
-    right:1em;
-    animation-name: cubeRotate;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-  }
-
-
-  .icon-circle{
-    zoom: 70%;
-    z-index:9;
-    left:-1rem;
-    bottom:0;
-    animation-name:shakeEffect;
-    animation-duration: 6s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-} 
- @keyframes shakeEffect {
-  
-    50%{
-        left:5%;
-        bottom:20%;
-    }
- 
-  }
-
-  .icon-zigzag{
-    zoom: 70%;
-    z-index:9;
-    top:1em;
-    left:-1em;
-    animation:zigzagAnimation 5s ease-in infinite;
-  }
-
-  .icon-plus{
-    zoom: 80%;
-    z-index:9;
-    top:-2rem;
-    left: 50%;
-    animation:shakeEffectPlus 5s ease-in infinite;
-  }
-
-
 .project-section{
-      background-color: rgb(231,231,231,0.8);
       margin-top:4rem;
     }
   
@@ -1510,8 +1368,8 @@ footer{
 
 .skill-fade-text{
   font-size:3em;
-  bottom:-18.9%;
-  right:34%;
+  bottom:-18%;
+  right:40%;
 }
 
 
@@ -1522,8 +1380,6 @@ footer{
 .caps{
   font-size:75px;
 }
-
-
 
 .skill-container-right{
   display:flex;
@@ -1630,7 +1486,6 @@ footer{
 
 .contactus-form-container{
   width:100%;
-  background-color: rgb(231,231,231);
 }
 
 .contactus-heading{
@@ -1671,11 +1526,9 @@ footer{
   padding: 0 2rem;
   font-size:15px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #939393;
   font-weight:500;
   border:none;
   margin-top:27px;
-  border: 1px solid rgba(0, 0, 0, 0.497);
 }
 
 .formfield-textarea{
@@ -1713,7 +1566,6 @@ footer{
 }
 
 .contactus-below p{
-  color:rgb(90, 90, 90);
   width: 90%;
   margin-left: 5%;
   text-align: center;
@@ -1722,14 +1574,12 @@ footer{
 .contactus-below a{
   cursor: pointer;
   margin: auto;
-  color:rgb(86, 144, 253);
   font-size: medium;
 }
 
 footer{
   position:relative;
   margin-top:-1px;
-  background-color: #343d68;
   padding:1rem;
 }
 
@@ -1745,7 +1595,6 @@ footer{
   position:absolute;
   left:0;
   bottom:0;
-  color:#535c87;
   user-select:none;
   font-size:2em;
 }
@@ -1756,7 +1605,6 @@ footer{
 }
 
 .link-wrapper div a{
-  color:white;
   text-decoration:none;
   transition:all 0.6s;
 }
@@ -1966,8 +1814,8 @@ footer{
 
   
 .project-section{
-      background-color: rgb(231,231,231,0.8);
-      margin-top:4rem;
+  margin:1rem;
+  border-radius: 1rem;
     }
   
   .page-header {
@@ -1979,11 +1827,11 @@ footer{
   .project-container {
     padding: 0.3rem;
     margin: 0.625rem;
-    gap: 4rem;
+    gap: 3rem;
   }
   .project-card {
     width: 100%;
-    height: 300px;
+    height: 250px;
   }
   .project-card {
     background-size: cover;
@@ -2000,11 +1848,11 @@ footer{
     left: 0;
   }
   .project-heading {
-    font-size: 2.5rem;
-    width: 100%;
+    font-size: 2rem;
+    width: 90%;
   }
   .project-sub-heading {
-    width: 100%;
+    width: 90%;
   }
   #project2 {
     margin-left: 0;
@@ -2016,13 +1864,13 @@ footer{
     width: 100%;
   }
   .project-skill {
-    width: 2.5rem;
+    width: 1.8rem;
   }
   .project-card:hover .project-number {
     display: none;
   }
   .project-card:hover .project-content {
-    scale: 0.55;
+    scale: 0.5;
   }
 
 .skills-container{
@@ -2043,6 +1891,7 @@ footer{
   display:flex;
   flex-direction:column;
   margin-bottom: 2%;
+  border-radius: 2rem;
 }
 
 .skill-container-right{
@@ -2056,8 +1905,8 @@ margin-bottom: 5%;
 }
 
 .skill-fade-text{
-  font-size:3em;
-  bottom:-4%;
+  font-size:2em;
+  bottom:-3.5%;
   right:70%;
 }
 
@@ -2139,12 +1988,19 @@ margin-bottom: 5%;
   padding: 20px;
 }
 
+.design-section {
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+ul li .date {
+  font-size: 1rem;
+}
 
 /* Contact us */
 
 .contactus-form-container{
   width:100%;
-  background-color: rgb(231,231,231);
 }
 
 .contactus-heading{
@@ -2185,11 +2041,9 @@ margin-bottom: 5%;
   padding: 0 2rem;
   font-size:10px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #939393;
   font-weight:500;
   border:none;
   margin-top:27px;
-  border: 1px solid rgba(0, 0, 0, 0.497);
 }
 
 .formfield-textarea{
@@ -2228,7 +2082,6 @@ margin-bottom: 5%;
 }
 
 .contactus-below p{
-  color:rgb(90, 90, 90);
   width: 90%;
   margin-left: 5%;
   text-align: center;
@@ -2238,7 +2091,6 @@ margin-bottom: 5%;
 .contactus-below a{
   cursor: pointer;
   margin: auto;
-  color:rgb(86, 144, 253);
   font-size: 0.8rem;
 }
 
@@ -2252,7 +2104,6 @@ margin-bottom: 5%;
 }
 
 .link-wrapper div a{
-  color:white;
   text-decoration:none;
   transition:all 0.6s;
 }
@@ -2324,36 +2175,36 @@ footer{
 
 .animationX {
   opacity: 0;
-  transform: translateX(-300px);
+  transform: translateX(-200px);
   transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
+  transition-delay: 0.2s;
 
 }
 .animationXX {
   opacity: 0;
-  transform: translateX(300px);
+  transform: translateX(200px);
   transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
+  transition-delay: 0.2s;
 
 }
 .animationY {
   opacity: 0;
-  transform: translateY(-300px);
+  transform: translateY(-50px);
   transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
+  transition-delay: 0.2s;
 
 }
 
 .animationYY {
   opacity: 0;
-  transform: translateY(250px);
+  transform: translateY(50px);
   transition: all 0.7s ease-out;
   transition-delay: 0.1s;
 
 }
 .animationZ {
   opacity: 0;
-  transform: translateZ(-300px);
+  transform: translateZ(-50px);
   transition: all 0.7s ease-in-out;
   transition-delay: 0.3s;
 

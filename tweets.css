@@ -38,7 +38,7 @@
   background-color: rgba(114, 109, 153, 0.55);
   backdrop-filter: blur(7px);
   z-index: 50;
-  border: 0.6px solid rgba(245, 245, 245, 0.608);
+  border: 1px solid rgba(245, 245, 245, 0.608);
 }
 
 .logo{
@@ -90,7 +90,7 @@ a{
 .nav-items div a:hover {
 background-color: transparent;
 text-decoration:underline;
-text-underline-position: below;
+text-underline-position:below;
 }
 
 .nav-items div:hover{
@@ -108,20 +108,20 @@ position: relative;
 }
 
 .icon{
-  cursor:pointer;
-  color:black;
-  background-color: white;
-  border: 0.2px solid whitesmoke;
-  box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.7);
-  padding: 8px 10px;
-  border-radius: 12px;
-  font-size: 35px;
-  transition:all 0.2s;
+cursor:pointer;
+color:black;
+background-color: white;
+border: 0.2px solid whitesmoke;
+box-shadow: 0px 16px 30px -10px rgba(0, 0, 0, 0.7);
+padding: 8px 10px;
+border-radius: 12px;
+font-size: 35px;
+transition:all 0.2s;
 }
 
 .icon:hover{
-  scale: 1.2;
-  transform: translateY(-8px);
+scale: 1.2;
+transform: translateY(-8px);
 }
 
 .hero-section{
@@ -223,6 +223,8 @@ position: relative;
 }
 
 
+/* Footer Section */
+
 footer{
   position:relative;
   margin-top:-1px;
@@ -265,7 +267,7 @@ footer{
   box-shadow: inset 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
   max-width: fit-content;
   padding: 8px;
-  border-radius: 12px;
+  border-radius: 20px;
 }
 
 .tooltiptext {
@@ -365,6 +367,27 @@ footer{
     font-size: 20px;
   }
 
+  footer{
+    position:relative;
+    margin-top:-1px;
+    padding:1rem;
+  }
+  
+  .footer-wrapper{
+    display:flex;
+    gap:1rem;
+    padding:1.2rem;
+    justify-content: space-between;
+    align-items:center;
+  }
+  
+  .footer-faded-text{
+    position:absolute;
+    left:0;
+    bottom:0;
+    user-select:none;
+    font-size:2em;
+  }
   footer{
     padding:2rem;
   }
@@ -480,39 +503,45 @@ footer{
   .footer-faded-text{
     font-size:1.5em;
   }
-  
 }
 
-
 /* Animation using Javascript */
-@media (min-width:1200px) {
+@media (min-width:1000px) {
   
 
   .animationX {
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(-200px);
     transition: all 0.7s ease-out;
-    transition-delay: 0.1s;
+    transition-delay: 0.2s;
   
   }
   .animationXX {
     opacity: 0;
-    transform: translateX(300px);
+    transform: translateX(200px);
     transition: all 0.7s ease-out;
-    transition-delay: 0.1s;
+    transition-delay: 0.2s;
   
   }
   .animationY {
     opacity: 0;
-    transform: translateY(-300px);
+    transform: translateY(-50px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.2s;
+  
+  }
+  
+  .animationYY {
+    opacity: 0;
+    transform: translateY(50px);
     transition: all 0.7s ease-out;
     transition-delay: 0.1s;
   
   }
   .animationZ {
     opacity: 0;
-    transform: translateZ(-300px);
-    transition: all 0.7s ease-out;
+    transform: translateZ(-50px);
+    transition: all 0.7s ease-in-out;
     transition-delay: 0.3s;
   
   }
@@ -535,4 +564,5 @@ footer{
     transform: translateX(0);
   }
   }
+  
   
