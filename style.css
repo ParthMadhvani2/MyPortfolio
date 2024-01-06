@@ -157,12 +157,12 @@ a{
 }
 
 .hero-section-sub-heading{
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 .hero-section-description{
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     width: 70%;
     font-weight: 500;
     color: rgb(182, 184, 197);
@@ -278,7 +278,7 @@ a{
     left: -3%;
 }
 
-@keyframes scaleImage {
+/* @keyframes scaleImage {
 
     0%{
         filter:grayscale(0);
@@ -296,7 +296,7 @@ a{
         filter:grayscale(0);
     }
     
-}
+} */
 
 
 /* Project section */
@@ -506,18 +506,18 @@ a{
     
 /* Skills Section */
 
-  .skills-container{
-    position:relative;
-    display:flex;
-    padding:5rem;
-    margin:10rem auto;
-    gap:30px;
-  }
+.skills-container{
+  position:relative;
+  display:flex;
+  padding:5rem;
+  margin:10rem auto;
+  gap:30px;
+}
 
-  .skill-img{
-    width: 100px;
-    height: 100px;
-  }
+.skill-img{
+  width: 100px;
+  height: 100px;
+}
 
 .skill-container-left{
   width:60%;
@@ -536,10 +536,10 @@ a{
 
 .skill-fade-text{
   position:absolute;
-  font-size:7em;
+  font-size:5em;
   font-style:bold;
   color:rgb(231,231,231);
-  bottom:-25.5%;
+  bottom:-21%;
   right:-1%;
   user-select:none;
   overflow-y:hidden;
@@ -1196,7 +1196,8 @@ footer{
 /* Responsive for 1200px */
 
 
-@media (max-width:1200px) {
+@media  (max-width:1200px) {
+
 
   .navbar{
       width: 99.75%;
@@ -1226,13 +1227,15 @@ footer{
   }
 
   .hero-section{
+    flex-direction: column-reverse;
     display:flex;
-    margin-left: 2rem;
-}
-.hero-section-left{
-  /* width:100%; */
-  margin-top: 1px;
-}
+    margin-left: 1rem;
+  }
+  
+  .hero-section-left{
+    /* width:100%; */
+    margin-top: 5px;
+  }
 
   .hero-section-heading{
       font-size: 35px;
@@ -1284,10 +1287,16 @@ footer{
     width: 260px;
     height: 280px;
     padding:2em;
-    filter: grayscale(1);
+    filter: grayscale(0);
     transition: all 1s;
     animation: scaleImage 5s linear infinite;
     border-radius: 5%;
+
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+  border: solid 3px #6e7491;
     left: -10%;
   }
     .user-image img{
@@ -1299,7 +1308,6 @@ footer{
     top: -2%;
     left: -3%;
     }
-
 
 .project-section{
       margin-top:4rem;
@@ -1448,8 +1456,6 @@ footer{
   margin: 1%;
   width: 400px;
 }
-
-
 
 /* Connect-section */
 .connect-section h2{
@@ -1671,7 +1677,7 @@ footer{
 /* Responsive for iphone 12 pro */
 
 
-@media (max-width:500px) {
+@media (max-width:680px){
 
   .navbar{
       width: 99.5%;
@@ -1714,10 +1720,10 @@ footer{
     margin-left: 1%;
 }
 
-.hero-section-left{
-  width:100%;
-  margin-top: 1px;
-}
+  .hero-section-left{
+    width:100%;
+    margin-top: 1px;
+  }
 
   .hero-section-heading{
       font-size: 25px;
@@ -1725,7 +1731,7 @@ footer{
 
   
   .hero-section-sub-heading{
-      font-size: 25px;
+      font-size: 22px;
       line-height: 20px;
   }
   
@@ -2169,6 +2175,8 @@ footer{
 }
 
 
+
+
 /* Animation using Javascript */
 @media (min-width:1000px) {
   
@@ -2227,4 +2235,5 @@ footer{
   opacity: 1;
   transform: translateX(0);
 }
+
 }
