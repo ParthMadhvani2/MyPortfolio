@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 
 *{
   margin:0;
@@ -1165,6 +1164,205 @@ footer {
 
 
 
+/* resume section */
+
+.resume-section{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 10rem auto;
+  padding: 0 1rem;
+}
+
+.img-container{
+  position: relative;
+  width: 70vw;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 20px #ffffff8e;
+}
+
+.resume-links{
+display:inline-flex;
+}
+
+.back-to-home{
+font-size: 20px;
+color: white;
+padding-top: 0.8rem;
+width:auto;
+cursor: pointer;
+transition: all 0.5s;
+font-weight: 500;
+position: relative;
+z-index: 1;
+}
+
+.back-to-home:hover{
+transition:0.9s;
+font-weight: bolder;
+color: var(--bgOrange);
+}
+
+.btn-pink-resume {
+  margin-left: 10px;
+  background-color: var(--bgOrange);
+  width:auto;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 1;
+}
+.btn-pink-resume::before {
+  content: "";
+  position: absolute;
+  background-color: #00000070;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+
+.btn-pink-resume:hover::before {
+  transform: scaleX(1);
+}
+.btn-pink-resume:hover {
+  border: solid 3px var(--bgOrange);
+  color: rgb(255, 255, 255);
+}
+
+
+/* tweets section */
+
+.tweet-section{
+  position:relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 10rem auto;
+  padding: 0 1rem;
+}
+
+.img-container{
+  position: relative;
+  width: 70vw;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 20px #ffffff8e;
+}
+
+.role{
+  color: #5c54d0;
+  font-weight: 800;
+}
+
+.links{
+display:inline-flex;
+
+}
+
+.img-sign{
+display: flex;
+margin: auto;
+justify-content: center;
+width: 70%;
+position: relative;
+top: 0;
+left: 0;
+}
+
+.image1{
+width: 65%;
+height: 50%;
+border-radius: 5%;
+opacity: 90%;
+position: relative;
+top: 0;
+left: 0;
+filter: blur(2px);
+}
+
+.image2{
+width: 40%;
+height: 80%;
+border-radius: 5%;
+opacity: 90%;
+position: absolute;
+top: 12%;
+zoom: 150%;
+}
+
+.tweets{
+display:flex;
+flex-wrap:wrap;
+width:90%;
+position:relative;
+gap:1rem;
+justify-content: center;
+zoom: 100%;
+}
+
+/* Error 404 */
+
+#main{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.fof{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.work-img{
+  margin: 0;
+  font-size: 70px;
+}
+
+.error-blue{
+  color: navy;
+  margin: 1rem;
+}
+
+.error-h1{
+  margin: 1rem;
+  color: black;
+  font-size: 50px;
+}
+
+.fof a{
+  color: #5c54d0;
+}
+
+.error-grey{
+  margin: 1rem;
+  color: #888;
+}
+
+@keyframes type{
+  from{box-shadow: inset -3px 0px 0px #888;}
+  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+
 /* Responsiveness */
 
 
@@ -1566,6 +1764,42 @@ footer {
   padding: 0.8rem 2.3rem;
   font-size: 1rem;
 }
+
+/* resume section */
+
+.back-to-home{
+  font-size: 20px;
+  padding-top: 0.8rem;
+}
+
+.btn-pink-resume {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* tweets section */
+
+  
+.image1{
+  width: 75%;
+  height: 50%;
+}
+
+.image2{
+  width: 70%;
+}
+
+.tweets{
+  display:flex;
+  flex-wrap:wrap;
+  width:50%;
+  position:relative;
+  gap:1rem;
+  justify-content: center;
+  zoom: 100%;
+}
+
 }
 
 .navbar-link-toggle {
@@ -2015,6 +2249,40 @@ ul li .date {
   width: 21%;
 }
 
+/* resume section */
+
+.back-to-home{
+  font-size: 12px;
+  padding-top: 0.8rem;
+}
+
+.btn-pink-resume {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+/* tweets section */
+
+.image1{
+  width: 120%;
+  height: 50%;
+}
+
+.image2{
+  width: 70%;
+}
+
+.tweets{
+  display:flex;
+  flex-wrap:wrap;
+  width:60%;
+  position:relative;
+  gap:1rem;
+  justify-content: center;
+  zoom: 100%;
+}
+
 }
 
 
@@ -2080,3 +2348,4 @@ ul li .date {
 }
 
 }
+
