@@ -1,189 +1,58 @@
-// Animaton JS code
-
-const the_animationX = document.querySelectorAll('.animationX')
-const the_animationXX = document.querySelectorAll('.animationXX')
-const the_animationY = document.querySelectorAll('.animationY')
-const the_animationYY = document.querySelectorAll('.animationYY')
-const the_animationZ = document.querySelectorAll('.animationZ')
-const the_animationL = document.querySelectorAll('.animationL')
-const the_animationR = document.querySelectorAll('.animationR')
-
-const observerX = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-animation')
-        }
-            else {
-                entry.target.classList.remove('scroll-animation')
+// Animation function
+const observeElements = (elements, threshold) => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('scroll-animation');
+            } else {
+                entry.target.classList.remove('scroll-animation');
             }
-        
-    })
-},
-   { threshold: 0.5
-   });
-//
-for (let i = 0; i < the_animationX.length; i++) {
-    const elements = the_animationX[i];
- 
-     observerX.observe(elements);
-   } 
+        });
+    }, { threshold });
 
+    elements.forEach((element) => observer.observe(element));
+};
 
-const observerXX = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-animation')
-        }
-            else {
-                entry.target.classList.remove('scroll-animation')
-            }
-        
-    })
-},
-   { threshold: 0.5
-   });
-//
-for (let i = 0; i < the_animationXX.length; i++) {
-    const elements = the_animationXX[i];
- 
-     observerX.observe(elements);
-   } 
+// Define animations
+const animationsConfig = [
+    { selector: '.animationX', threshold: 0.5 },
+    { selector: '.animationXX', threshold: 0.5 },
+    { selector: '.animationY', threshold: 0.5 },
+    { selector: '.animationYY', threshold: 0.8 },
+    { selector: '.animationZ', threshold: 0.5 },
+    { selector: '.animationL', threshold: 0.5 },
+    { selector: '.animationR', threshold: 0.5 },
+    // Add more animations as needed
+    { selector: '.animationA', threshold: 0.6 },
+    { selector: '.animationB', threshold: 0.7 },
+    { selector: '.animationC', threshold: 0.5 }
+];
 
+// Check if the viewport width is less than a certain threshold (e.g., 600 pixels) for mobile view
+const isMobileView = window.innerWidth < 600;
 
-const observerY = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-animation')
-        }
-            else {
-                entry.target.classList.remove('scroll-animation')
-            }
-        
-    })
-},
-   { threshold: 0.5
-   });
-//
-for (let i = 0; i < the_animationY.length; i++) {
-    const elements = the_animationY[i];
- 
-     observerY.observe(elements);
-   } 
+// Apply animations
+animationsConfig.forEach(({ selector, threshold }) => {
+    const elements = document.querySelectorAll(selector);
+    // Adjust the threshold for mobile view
+    const adjustedThreshold = isMobileView ? threshold * 0.5 : threshold;
+    observeElements(elements, adjustedThreshold);
+});
 
-   const observerYY = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-animation')
-        }
-            else {
-                entry.target.classList.remove('scroll-animation')
-            }
-        
-    })
-},
-   { threshold: 0.8
-   });
-//
-for (let i = 0; i < the_animationYY.length; i++) {
-    const elements = the_animationYY[i];
- 
-     observerY.observe(elements);
-   } 
-
-
-const observerZ = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-animation')
-        }
-            else {
-               
-            }
-        
-    })
-},
-   { threshold: 0.5
-   });
-//
-for (let i = 0; i < the_animationZ.length; i++) {
-    const elements = the_animationZ[i];
- 
-     observerZ.observe(elements);
-   } 
-
-
-const observerL = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-animation')
-        }
-            else {
-                
-            }
-        
-    })
-},
-   { threshold: 0.5
-   });
-//
-for (let i = 0; i < the_animationL.length; i++) {
-    const elements = the_animationL[i];
- 
-     observerL.observe(elements);
-   } 
-
-
-const observerR = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('scroll-animation')
-        }
-            else {
-               
-            }
-        
-    })
-},
-   { threshold: 0.5
-   });
-//
-for (let i = 0; i < the_animationR.length; i++) {
-    const elements = the_animationR[i];
- 
-     observerR.observe(elements);
-   } 
-
-
-
-
-
-
-//    Hover Btn Js code
-
+// Hover Btn Js code
 document.querySelector('.hover-btn').onmousemove = (e) => {
+    const x = e.pageX - e.target.offsetLeft;
+    const y = e.pageY - e.target.offsetTop;
 
-	const x = e.pageX - e.target.offsetLeft
-	const y = e.pageY - e.target.offsetTop
+    e.target.style.setProperty('--x', `${x}px`);
+    e.target.style.setProperty('--y', `${y}px`);
+};
 
-	e.target.style.setProperty('--x', `${ x }px`)
-	e.target.style.setProperty('--y', `${ y }px`)
-	
-}
-
-
-
-// Mail.js code to send mail of contact us form 
+// Mail.js code to send mail of contact us form
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBEK05H-fjpqhPGs7dRqOzQwxPR-d-jeyM",
-    authDomain: "portfolio-7a01c.firebaseapp.com",
-    databaseURL: "https://portfolio-7a01c-default-rtdb.firebaseio.com",
-    projectId: "portfolio-7a01c",
-    storageBucket: "portfolio-7a01c.appspot.com",
-    messagingSenderId: "796568543069",
-    appId: "1:796568543069:web:0e6854ccf55a8cb84412b4",
-    measurementId: "G-QMN8E0YZD3"
-  };
+    // ... (your firebase configuration)
+};
 
 // initialize firebase
 firebase.initializeApp(firebaseConfig);
@@ -194,36 +63,36 @@ var contactFormDB = firebase.database().ref("contactForm");
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
 function submitForm(e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  var name = getElementVal("name");
-  var email = getElementVal("email");
-  var message = getElementVal("message");
+    var name = getElementVal("name");
+    var email = getElementVal("email");
+    var message = getElementVal("message");
 
-  saveMessages(name, email, message);
+    saveMessages(name, email, message);
 
-  //   enable alert
-  document.querySelector(".alert").style.display = "block";
+    // enable alert
+    document.querySelector(".alert").style.display = "block";
 
-  //   remove the alert
-  setTimeout(() => {
-    document.querySelector(".alert").style.display = "none";
-  }, 3000);
+    // remove the alert
+    setTimeout(() => {
+        document.querySelector(".alert").style.display = "none";
+    }, 3000);
 
-  //   reset the form
-  document.getElementById("contactForm").reset();
+    // reset the form
+    document.getElementById("contactForm").reset();
 }
 
 const saveMessages = (name, email, message) => {
-  var newContactForm = contactFormDB.push();
+    var newContactForm = contactFormDB.push();
 
-  newContactForm.set({
-    name: name,
-    email: email,
-    message: message,
-  });
+    newContactForm.set({
+        name: name,
+        email: email,
+        message: message,
+    });
 };
 
 const getElementVal = (id) => {
-  return document.getElementById(id).value;
+    return document.getElementById(id).value;
 };

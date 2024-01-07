@@ -438,22 +438,22 @@ a{
   }
 
   #project1{
-    background-image: url(./images/projects/project1.png);
+    background-image: url(./images/projects/Project1.png);
   }
 
   #project2{
     margin-left:120px;
-    background-image: url(./images/projects/project2.png);
+    background-image: url(./images/projects/Project2.png);
   }
   #project3{
-    background-image: url(./images/projects/project3.png);
+    background-image: url(./images/projects/Project3.png);
   }
   #project4{
     margin-left:120px;
     background-image: url(./images/projects/project4.png);
   }
   #project5{
-    background-image: url(./images/projects/project5.png);
+    background-image: url(./images/projects/Project5.png);
   }
 
   .btn-black-project {
@@ -637,22 +637,24 @@ a{
 
 
 /* ====== STATISTICS ====== */
-.statistics-section{
+/* General styles */
+.statistics-section {
   margin: 0.1%;
   text-align: center;
 }
 
-.statistics-title{
+.statistics-title {
   font-size: 3em;
   font-weight: 600;
   margin-bottom: 1%;
 }
 
-.statistics-subtitle{
+.statistics-subtitle {
   font-size: 1em;
   margin: auto;
 }
 
+/* Container styles */
 .statistics-container {
   display: flex;
   justify-content: center;
@@ -661,9 +663,13 @@ a{
   margin-bottom: 2%;
 }
 
+/* Image styles */
 .statistics-container img {
-  width: 400px;
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  width: 400px; /* Default width for larger screens */
 }
+
 
 
 /* connect-box */
@@ -733,8 +739,8 @@ a{
   display: grid;
   align-content: center;
   gap: 2rem;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 4rem;
   font-family: "Poppins", sans-serif;
   color: var(--color);
@@ -745,7 +751,7 @@ a{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 3%;
   margin-left: 7%;
-  font-size:4em;
+  font-size: 2.5em;
   color: white;
   line-height: 5px;
   z-index: 1;
@@ -754,7 +760,7 @@ a{
 .timeline-h2{
   margin-top: -1.7%;
   margin-left: 7%;
-  font-size:3em;
+  font-size: 2em;
   color:#E24A68;
 }
 
@@ -2284,7 +2290,7 @@ ul li .date {
 
 
 /* Animation using Javascript */
-@media (min-width:1000px) {
+@media (min-width:500px) {
   
 
 .animationX {
