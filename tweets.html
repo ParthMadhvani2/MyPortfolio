@@ -42,7 +42,11 @@
     
 </head>
 <body>
-    <div id="wrapper">
+      <!-- Preloader -->
+      <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div id="wrapper" class="content">
         <div id="home" class="container">
 
           
@@ -138,6 +142,15 @@
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-
+    <script>
+      // Preloader
+       document.addEventListener("DOMContentLoaded", function () {
+      // Hide the preloader when the content is fully loaded
+      setTimeout(function () {
+          document.querySelector(".preloader").style.display = "none";
+          document.querySelector(".content").style.display = "block";
+          }, 2000); // Adjust the duration as needed
+      });
+  </script>
 </body>
 </html>

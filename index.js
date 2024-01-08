@@ -96,3 +96,35 @@ const saveMessages = (name, email, message) => {
 const getElementVal = (id) => {
     return document.getElementById(id).value;
 };
+
+// Navbar
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector('.navbar-link-toggle');
+        const navigation = document.querySelector('.nav-items');
+
+        menuToggle.addEventListener('click', function () {
+            navigation.classList.toggle('show');
+        });
+
+        // Close the menu when a navigation link is clicked
+        document.querySelectorAll('.nav-items a').forEach(link => {
+            link.addEventListener('click', function () {
+                navigation.classList.remove('show');
+            });
+        });
+
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', function (event) {
+            const isClickInside = navigation.contains(event.target) || menuToggle.contains(event.target);
+            if (!isClickInside) {
+                navigation.classList.remove('show');
+            }
+        });
+
+        // Close the menu when resizing the window to desktop size
+        window.addEventListener('resize', function () {
+            if (window.innerWidth > 768) {
+                navigation.classList.remove('show');
+            }
+        });
+    });

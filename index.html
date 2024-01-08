@@ -42,7 +42,11 @@
     
 </head>
 <body>
-    <div id="wrapper">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div id="wrapper" class="content">
         <div id="home" class="container">
 
           
@@ -262,7 +266,6 @@
 
         <!-- skills section -->
         <div id="skills" class="container skills-container ">
-          <div class="skill-fade-text">Skills<img src="./images/userAsset/skills.webp" loading="lazy" class="skill-img" alt="skills"></div>
 
           <div class="skill-container-left">
             <h2 class="skill-heading animationX">
@@ -519,5 +522,15 @@
         backDelay: 1000,
       });
     </script>
+    <script>
+      // Preloader
+       document.addEventListener("DOMContentLoaded", function () {
+      // Hide the preloader when the content is fully loaded
+      setTimeout(function () {
+          document.querySelector(".preloader").style.display = "none";
+          document.querySelector(".content").style.display = "block";
+          }, 1000); // Adjust the duration as needed
+      });
+  </script>
 </body>
 </html>

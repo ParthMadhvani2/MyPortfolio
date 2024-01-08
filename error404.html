@@ -41,15 +41,29 @@
     <link rel="shortcut icon" type="image/png" href="images/userAsset/logo-trans.png">
     
 </head>
-<body>
-  <div id="error">
-    <div class="fof">
-          <p class="work-img">🚧</p>
-          <p class="error-blue">Stay Tuned</p>
-          <h1 class="error-h1">Work in progress.</h1>
-          <p class="error-grey">Sorry, this page is still under construction.</p>
-          <a href="./index.html">Go to portfolio -></a>
-    </div>
-</div>
+  <body>
+            <!-- Preloader -->
+        <div class="preloader">
+            <div class="loader"></div>
+        </div>
+        <div id="error" class="content">
+          <div class="fof">
+                <p class="work-img">🚧</p>
+                <p class="error-blue">Stay Tuned</p>
+                <h1 class="error-h1">Work in progress.</h1>
+                <p class="error-grey">Sorry, this page is still under construction.</p>
+                <a href="./index.html">Go to portfolio -></a>
+          </div>
+      </div>
+      <script>
+        // Preloader
+         document.addEventListener("DOMContentLoaded", function () {
+        // Hide the preloader when the content is fully loaded
+        setTimeout(function () {
+            document.querySelector(".preloader").style.display = "none";
+            document.querySelector(".content").style.display = "block";
+            }, 1000); // Adjust the duration as needed
+        });
+    </script>
 </body>
 </html>
