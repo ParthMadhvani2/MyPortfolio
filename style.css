@@ -2343,27 +2343,27 @@ ul li .date {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
+  transition-delay: 0.2s;
 
 }
 .animationZ {
   opacity: 0;
   transform: translateZ(-50px);
   transition: all 0.7s ease-in-out;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 
 }
 .animationL {
   opacity: 0;
   transform: translate(-300px);
-  transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
 }
 .animationR {
   opacity: 0;
   transform: translate(300px);
-  transition: all 0.7s ease-out;
-  transition-delay: 0.1s;
+  transition: all 0.5s ease-out;
+  transition-delay: 0.2s;
 
 }
 
