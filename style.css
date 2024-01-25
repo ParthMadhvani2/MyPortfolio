@@ -1013,6 +1013,7 @@ ul li .descr::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5%;
 }
 
 .form {
@@ -1074,8 +1075,9 @@ ul li .descr::before {
 }
 
 .contactus-img {
-  width: 400px;
-  height: 400px;
+  margin-bottom: 3%;
+  width: 350px;
+  height: 350px;
 }
 
 .hr {
@@ -1728,7 +1730,7 @@ footer {
 
   .contactus-heading {
     margin-top: -0.5%;
-    margin-left: 20%;
+    margin-left: 5%;
     font-size: 3.5em;
 
   }
@@ -1736,13 +1738,13 @@ footer {
   .contactus-heading-down {
     margin-top: 10%;
     display: flex;
-    margin-left: 20%;
+    margin-left: 5%;
     font-size: 3em;
   }
 
   .contactus-sub-heading {
-    margin-left: 20%;
-    margin-top: 70px;
+    margin-left: 5%;
+    margin-top: 50px;
     width: 60%;
     font-size: 1.2rem;
   }
@@ -1752,7 +1754,7 @@ footer {
     flex-direction: column;
     gap: 30px;
     width: 80%;
-    margin: 2rem 5rem;
+    margin: 1rem 1rem;
   }
 
   .formfield-container {
@@ -1786,8 +1788,8 @@ footer {
   }
 
   .contactus-img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
 
   .hr {
@@ -2218,6 +2220,8 @@ footer {
 
   .contactus-form-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .contactus-heading {
@@ -2242,15 +2246,16 @@ footer {
   }
 
   .form {
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 80%;
-    margin: 2rem 1rem;
+    width: 90%;
+    margin: 1rem 1rem;
   }
 
   .formfield-container {
-    width: 60%;
+    width: 80%;
   }
 
   .formfield {
@@ -2281,7 +2286,7 @@ footer {
   }
 
   .contactus-img {
-    width: 160px;
+    width: 200px;
     height: 200px;
   }
 
