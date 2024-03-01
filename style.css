@@ -502,11 +502,6 @@ a {
   justify-content: space-between;
 }
 
-.skill-img {
-  width: 100px;
-  height: 100px;
-}
-
 .skill-container-left {
   width: 60%;
   display: flex;
@@ -539,8 +534,8 @@ a {
 }
 
 .skills-logo {
-  height: 90px;
-  width: 90px;
+  height: 80px;
+  width: 80px;
   transition: all 0.5s;
   z-index: 2;
 }
@@ -1266,80 +1261,6 @@ footer {
   color: var(--white);
 }
 
-
-/* tweets section */
-
-.tweet-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-  margin: 10rem auto;
-  padding: 0 1rem;
-}
-
-.img-container {
-  position: relative;
-  width: 70vw;
-  pointer-events: none;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 2px 2px 20px var(--white8E);
-}
-
-.role {
-  color: var(--role);
-  font-weight: 800;
-}
-
-.links {
-  display: inline-flex;
-
-}
-
-.img-sign {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  width: 70%;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.image1 {
-  width: 65%;
-  height: 50%;
-  border-radius: 5%;
-  opacity: 90%;
-  position: relative;
-  top: 0;
-  left: 0;
-  filter: blur(2px);
-}
-
-.image2 {
-  width: 40%;
-  height: 80%;
-  border-radius: 5%;
-  opacity: 90%;
-  position: absolute;
-  top: 12%;
-  zoom: 150%;
-}
-
-.tweets {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  position: relative;
-  gap: 1rem;
-  justify-content: center;
-  zoom: 100%;
-}
-
 /* Error 404 */
 
 #error {
@@ -1874,28 +1795,6 @@ footer {
     font-size: 20px;
   }
 
-  /* tweets section */
-
-
-  .image1 {
-    width: 75%;
-    height: 50%;
-  }
-
-  .image2 {
-    width: 70%;
-  }
-
-  .tweets {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    position: relative;
-    gap: 1rem;
-    justify-content: center;
-    zoom: 100%;
-  }
-
 }
 
 .navbar-link-toggle {
@@ -2383,27 +2282,6 @@ footer {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 10px;
-  }
-
-  /* tweets section */
-
-  .image1 {
-    width: 120%;
-    height: 50%;
-  }
-
-  .image2 {
-    width: 70%;
-  }
-
-  .tweets {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    position: relative;
-    gap: 1rem;
-    justify-content: center;
-    zoom: 100%;
   }
 
 }
