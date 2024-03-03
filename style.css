@@ -452,16 +452,16 @@ a {
 }
 
 #project1 {
-  background-image: url(./images/projects/Project1.png);
+  background-image: url(./images/projects/Project1.webp);
 }
 
 #project2 {
   margin-left: 120px;
-  background-image: url(./images/projects/Project2.png);
+  background-image: url(./images/projects/Project2.webp);
 }
 
 #project3 {
-  background-image: url(./images/projects/Project3.png);
+  background-image: url(./images/projects/Project3.webp);
 }
 
 .btn-black-project {
