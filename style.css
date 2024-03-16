@@ -397,7 +397,7 @@ a {
   flex-direction: column;
   color: var(--white);
   padding: 1em;
-  bottom: 20%;
+  bottom: 25%;
   z-index: 5;
   gap: 1em;
   transition: all 0.4s;
@@ -425,7 +425,7 @@ a {
 }
 
 .project-heading {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   line-height: 3rem;
 }
@@ -1523,7 +1523,7 @@ footer {
     width: 100%;
   }
 
-  .project-sub-heading {
+  .project-subHeading {
     width: 100%;
   }
 
@@ -1964,12 +1964,12 @@ footer {
   }
 
   .project-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
     width: 90%;
   }
 
-  .project-sub-heading {
-    width: 90%;
+  .project-subHeading {
+    width: 100%;
   }
 
   #project2 {
