@@ -430,6 +430,11 @@ a {
   line-height: 3rem;
 }
 
+.project-date{
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .project-subHeading {
   width: 70%;
   font-size: 16px;
